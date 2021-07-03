@@ -1,0 +1,10 @@
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.exe.config
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.exe
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.pdb
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.MHLapDSHocVien.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.Properties.Resources.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.exe
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.pdb
