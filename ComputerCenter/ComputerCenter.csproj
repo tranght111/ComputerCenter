@@ -46,16 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MHLapDSHocVien.cs">
+    <Compile Include="BUS\DiemThi.cs" />
+    <Compile Include="BUS\DiemThiTN.cs" />
+    <Compile Include="BUS\HocPhan.cs" />
+    <Compile Include="DAO\DiemThiDB.cs" />
+    <Compile Include="DAO\DiemThiTN_DB.cs" />
+    <Compile Include="DAO\HocPhanDB.cs" />
+    <Compile Include="DAO\KhoaHocDB.cs" />
+    <Compile Include="DAO\XuLyDuLieu.cs" />
+    <Compile Include="BUS\KhoaHoc.cs" />
+    <Compile Include="GUI\MHLapDSHocVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MHLapDSHocVien.Designer.cs">
+    <Compile Include="GUI\MHLapDSHocVien.Designer.cs">
       <DependentUpon>MHLapDSHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHVTotNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHVTotNghiep.Designer.cs">
+      <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MHLapDSHocVien.resx">
+    <EmbeddedResource Include="GUI\MHLapDSHocVien.resx">
       <DependentUpon>MHLapDSHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHLapDSHVTotNghiep.resx">
+      <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,10 +97,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BUS\" />
-    <Folder Include="DAO\" />
-    <Folder Include="GUI\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
