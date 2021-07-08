@@ -9,11 +9,11 @@ using ComputerCenter.DAO;
 
 namespace ComputerCenter.BUS
 {
-    public class HocPhan
+    public class HocPhanBUS
     {
-        public static string MaHocPhan;
+        public string MaHocPhan { get; set; }
 
-        HocPhanDB HP = new HocPhanDB();
+        HocPhanDAO HP = new HocPhanDAO();
 
         public DataTable LayDSNhomHocPhan(string MaKhoaHoc)
         {

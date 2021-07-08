@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace ComputerCenter.DAO
 {
-    public class HocPhanDB
+    public class HocPhanDAO
     {
         static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
         public DataTable LayDSNhomHocPhan(string MaKhoaHoc)

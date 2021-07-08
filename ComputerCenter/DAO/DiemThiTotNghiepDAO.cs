@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace ComputerCenter.DAO
 {
-    public class DiemThiTN_DB: XuLyDuLieu
+    public class DiemThiTotNghiepDAO: XuLyDuLieu
     {
         public DataTable LayDSHVThiDatTotNghiep(string MaKhoaHoc)
         {

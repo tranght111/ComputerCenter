@@ -13,8 +13,8 @@ namespace ComputerCenter.GUI
 {
     public partial class MHLapDSHVTotNghiep : Form
     {
-        KhoaHoc KH = new KhoaHoc();
-        DiemThiTN TN = new DiemThiTN();
+        KhoaHocBUS KH = new KhoaHocBUS();
+        DiemThiTotNghiepBUS TN = new DiemThiTotNghiepBUS();
 
         public MHLapDSHVTotNghiep()
         {
@@ -32,9 +32,9 @@ namespace ComputerCenter.GUI
 
         private void btnLapDS_Click(object sender, EventArgs e)
         {
-            KhoaHoc.MaKhoaHoc = cbbKhoaHocKTV.SelectedValue.ToString().Trim();
+            KH.MaKhoaHoc = cbbKhoaHocKTV.SelectedValue.ToString().Trim();
 
-            var table = TN.LayDSHVThiDatTotNghiep(KhoaHoc.MaKhoaHoc);
+            var table = TN.LayDSHVThiDatTotNghiep(KH.MaKhoaHoc);
 
             dgvDSHVTotNghiep.DataSource = table;
         }

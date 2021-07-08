@@ -17,8 +17,8 @@ namespace ComputerCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new MHLapDSHocVien());
-            Application.Run(new MHLapDSHVTotNghiep());
+            Application.Run(new MHLapDSHocVien());
+            //Application.Run(new MHDangNhap());
         }
     }
 }

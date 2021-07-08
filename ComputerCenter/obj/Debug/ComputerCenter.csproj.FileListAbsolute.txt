@@ -9,3 +9,5 @@ C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\Comp
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.exe
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.pdb
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHLapDSHVTotNghiep.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources

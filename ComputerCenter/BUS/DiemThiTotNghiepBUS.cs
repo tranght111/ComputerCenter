@@ -9,9 +9,9 @@ using ComputerCenter.DAO;
 
 namespace ComputerCenter.BUS
 {
-    public class DiemThiTN
+    public class DiemThiTotNghiepBUS
     {
-        DiemThiTN_DB TN = new DiemThiTN_DB();
+        DiemThiTotNghiepDAO TN = new DiemThiTotNghiepDAO();
 
         public DataTable LayDSHVThiDatTotNghiep(string MaKhoaHoc)
         {
