@@ -13,16 +13,14 @@ namespace ComputerCenter.BUS
     {
        public int MaKH { get; set; }
 
-        KhoaHocDAO KH = new KhoaHocDAO();
-
-        public DataTable LayDSKhoaHoc()
+        public static DataTable LayDSKhoaHoc()
         {
-            return KH.LayDSKhoaHoc();
+            return KhoaHocDAO.LayDSKhoaHoc();
         }
 
-        public DataTable LayDSKhoaHocKTV()
+        public static DataTable LayDSKhoaHocKTV()
         {
-            return KH.LayDSKhoaHocKTV();
+            return KhoaHocDAO.LayDSKhoaHocKTV();
         }
     }
 }

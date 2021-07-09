@@ -13,9 +13,6 @@ namespace ComputerCenter.GUI
 {
     public partial class MHDangKy : Form
     {
-        HocVienBUS hv = new HocVienBUS();
-
-
         public MHDangKy()
         {
             InitializeComponent();
@@ -40,7 +37,7 @@ namespace ComputerCenter.GUI
                 Username = txtUser.Text,
                 Password = txtPassword.Text
                 };
-            var rs = hv.ThemHocVien(hv);
+            var rs = HocVienBUS.ThemHocVien(hv);
 
             if(rs > 0 )
             {

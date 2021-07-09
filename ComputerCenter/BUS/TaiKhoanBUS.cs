@@ -16,18 +16,17 @@ namespace ComputerCenter.BUS
         public string username { get; set; }
         public string password { get; set; }
 
-        TaiKhoanDAO tkd = new TaiKhoanDAO();
-        public SqlDataReader KtraDangNhapHopLe(TaiKhoanBUS tk)
+        public static SqlDataReader KtraDangNhapHopLe(TaiKhoanBUS tk)
         {
             if(tk.role == "NhanVienKhaoThi" || tk.role == "NhanVienKeToan")
             {
                 tk.role = "NhanVien";
             }
 
-            return tkd.DocThongTinNguoiDung(tk);
+            return TaiKhoanDAO.DocThongTinNguoiDung(tk);
         }
 
-        public void DangXuat()
+        public static void DangXuat()
         {
             MHDangNhap f = new MHDangNhap();
             f.Show();

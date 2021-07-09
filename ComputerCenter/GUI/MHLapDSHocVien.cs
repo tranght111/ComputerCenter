@@ -24,7 +24,7 @@ namespace ComputerCenter
 
         private void MHLapDSHocVien_Load(object sender, EventArgs e)
         {
-            var tableKhoaHoc = KH.LayDSKhoaHoc();
+            var tableKhoaHoc = KhoaHocBUS.LayDSKhoaHoc();
 
             cbbKhoaHoc.ValueMember = "MAKHOAHOC";
             cbbKhoaHoc.DataSource = tableKhoaHoc;
@@ -40,12 +40,12 @@ namespace ComputerCenter
             var table = new DataTable();
             if (string.IsNullOrEmpty(cbbLanThi.Text))
             {
-                table = DT.LayDSHVThiDatCuaMonHoc(DT.MaHocPhan, DT.MaLop);
+                table = DiemThiBUS.LayDSHVThiDatCuaMonHoc(DT.MaHocPhan, DT.MaLop);
             }
             else
             {
                 DT.LanThi = int.Parse(cbbLanThi.Text);
-                table = DT.LayDSHVThiDatCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
+                table = DiemThiBUS.LayDSHVThiDatCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
             }
             dgvDSHV.DataSource = table;
         }
@@ -59,12 +59,12 @@ namespace ComputerCenter
             var table = new DataTable();
             if (string.IsNullOrEmpty(cbbLanThi.Text))
             {
-                table = DT.LayDSHVHocLaiCuaMonHoc(DT.MaHocPhan, DT.MaLop);
+                table = DiemThiBUS.LayDSHVHocLaiCuaMonHoc(DT.MaHocPhan, DT.MaLop);
             }
             else
             {
                 DT.LanThi = int.Parse(cbbLanThi.Text);
-                table = DT.LayDSHVHocLaiCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
+                table = DiemThiBUS.LayDSHVHocLaiCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
             }
 
             dgvDSHVHocLai.DataSource = table;
@@ -74,7 +74,7 @@ namespace ComputerCenter
         {
             KH.MaKH = int.Parse(cbbKhoaHoc.Text);         
 
-            var tableHocPhan = HP.LayDSNhomHocPhan(KH.MaKH);
+            var tableHocPhan = HocPhanBUS.LayDSNhomHocPhan(KH.MaKH);
 
             cbbHocPhan.ValueMember = "MANHOM";
             cbbHocPhan.DataSource = tableHocPhan;
@@ -87,7 +87,7 @@ namespace ComputerCenter
             HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
             KH.MaKH = int.Parse(cbbKhoaHoc.Text);
 
-            var tableMonHoc = DT.LayDSMonHoc(KH.MaKH, HP.MaHocPhan);
+            var tableMonHoc = DiemThiBUS.LayDSMonHoc(KH.MaKH, HP.MaHocPhan);
 
             cbbMonHoc.ValueMember = "MALOP";
             cbbMonHoc.DataSource = tableMonHoc;
@@ -100,7 +100,7 @@ namespace ComputerCenter
             HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
             DT.MaLop = int.Parse(cbbMonHoc.Text);
 
-            var tableLanThi = DT.LayDSLanThiCuaMonHoc(HP.MaHocPhan, DT.MaLop);
+            var tableLanThi = DiemThiBUS.LayDSLanThiCuaMonHoc(HP.MaHocPhan, DT.MaLop);
 
             cbbLanThi.ValueMember = "LANTHI";
             cbbLanThi.DataSource = tableLanThi;
