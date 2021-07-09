@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +47,66 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BUS\DiemThiBUS.cs" />
+    <Compile Include="BUS\DiemThiTotNghiepBUS.cs" />
+    <Compile Include="BUS\HocPhanBUS.cs" />
+    <Compile Include="BUS\HocVienBUS.cs" />
+    <Compile Include="BUS\TaiKhoanBUS.cs" />
+    <Compile Include="DAO\DiemThiDAO.cs" />
+    <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
+    <Compile Include="DAO\HocPhanDAO.cs" />
+    <Compile Include="DAO\HocVienDAO.cs" />
+    <Compile Include="DAO\KhoaHocDAO.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="DAO\XuLyDuLieu.cs" />
+    <Compile Include="BUS\KhoaHocBUS.cs" />
+    <Compile Include="GUI\MHDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\MHDangKy.Designer.cs">
+      <DependentUpon>MHDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHDangNhap.Designer.cs">
+      <DependentUpon>MHDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHocVien.Designer.cs">
+      <DependentUpon>MHLapDSHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHVTotNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHLapDSHVTotNghiep.Designer.cs">
+      <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHNhanVienKhaoThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHNhanVienKhaoThi.Designer.cs">
+      <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\MHDangKy.resx">
+      <DependentUpon>MHDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHDangNhap.resx">
+      <DependentUpon>MHDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHLapDSHocVien.resx">
+      <DependentUpon>MHLapDSHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHLapDSHVTotNghiep.resx">
+      <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHNhanVienKhaoThi.resx">
+      <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -76,5 +129,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

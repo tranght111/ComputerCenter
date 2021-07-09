@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComputerCenter.GUI;
 
 namespace ComputerCenter
 {
@@ -16,7 +17,8 @@ namespace ComputerCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new MHNhanVienKhaoThi());
+            Application.Run(new MHDangNhap());
         }
     }
 }
