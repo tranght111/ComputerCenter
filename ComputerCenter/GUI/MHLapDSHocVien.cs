@@ -28,14 +28,14 @@ namespace ComputerCenter
 
             cbbKhoaHoc.ValueMember = "MAKHOAHOC";
             cbbKhoaHoc.DataSource = tableKhoaHoc;
-            cbbKhoaHoc.DisplayMember = "TENKHOAHOC";
+            cbbKhoaHoc.DisplayMember = "MAKHOAHOC";
         }
 
         private void btnDSHVThiDat_Click(object sender, EventArgs e)
         {
-            KH.MaKhoaHoc = cbbKhoaHoc.SelectedValue.ToString().Trim();
-            DT.MaLop = cbbMonHoc.SelectedValue.ToString().Trim();
-            DT.MaHocPhan = cbbHocPhan.SelectedValue.ToString().Trim();
+            KH.MaKH = int.Parse(cbbKhoaHoc.Text);
+            DT.MaLop = int.Parse(cbbMonHoc.Text);
+            DT.MaHocPhan = int.Parse(cbbHocPhan.Text);
          
             var table = new DataTable();
             if (string.IsNullOrEmpty(cbbLanThi.Text))
@@ -44,7 +44,7 @@ namespace ComputerCenter
             }
             else
             {
-                DT.LanThi = cbbLanThi.SelectedValue.ToString().Trim();
+                DT.LanThi = int.Parse(cbbLanThi.Text);
                 table = DT.LayDSHVThiDatCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
             }
             dgvDSHV.DataSource = table;
@@ -52,9 +52,9 @@ namespace ComputerCenter
 
         private void btnDSHVHocLai_Click(object sender, EventArgs e)
         {
-            KH.MaKhoaHoc = cbbKhoaHoc.SelectedValue.ToString().Trim();
-            DT.MaLop = cbbMonHoc.SelectedValue.ToString().Trim();
-            DT.MaHocPhan = cbbHocPhan.SelectedValue.ToString().Trim();
+            KH.MaKH = int.Parse(cbbKhoaHoc.Text);
+            DT.MaLop = int.Parse(cbbMonHoc.Text);
+            DT.MaHocPhan = int.Parse(cbbHocPhan.Text);
 
             var table = new DataTable();
             if (string.IsNullOrEmpty(cbbLanThi.Text))
@@ -63,7 +63,7 @@ namespace ComputerCenter
             }
             else
             {
-                DT.LanThi = cbbLanThi.SelectedValue.ToString().Trim();
+                DT.LanThi = int.Parse(cbbLanThi.Text);
                 table = DT.LayDSHVHocLaiCuaMonHocTrongLanThi(DT.MaHocPhan, DT.MaLop, DT.LanThi);
             }
 
@@ -72,33 +72,33 @@ namespace ComputerCenter
 
         private void cbbKhoaHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            KH.MaKhoaHoc = cbbKhoaHoc.SelectedValue.ToString().Trim();         
+            KH.MaKH = int.Parse(cbbKhoaHoc.Text);         
 
-            var tableHocPhan = HP.LayDSNhomHocPhan(KH.MaKhoaHoc);
+            var tableHocPhan = HP.LayDSNhomHocPhan(KH.MaKH);
 
             cbbHocPhan.ValueMember = "MANHOM";
             cbbHocPhan.DataSource = tableHocPhan;
 
-            cbbHocPhan.DisplayMember = "TENNHOM";
+            cbbHocPhan.DisplayMember = "MANHOM";
         }
 
         private void cbbHocPhan_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HP.MaHocPhan = cbbHocPhan.SelectedValue.ToString().Trim();
-            KH.MaKhoaHoc = cbbKhoaHoc.SelectedValue.ToString().Trim();
+            HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
+            KH.MaKH = int.Parse(cbbKhoaHoc.Text);
 
-            var tableMonHoc = DT.LayDSMonHoc(KH.MaKhoaHoc, HP.MaHocPhan);
+            var tableMonHoc = DT.LayDSMonHoc(KH.MaKH, HP.MaHocPhan);
 
             cbbMonHoc.ValueMember = "MALOP";
             cbbMonHoc.DataSource = tableMonHoc;
-            cbbMonHoc.DisplayMember = "TENLOP";
+            cbbMonHoc.DisplayMember = "MALOP";
 
         }
 
         private void cbbMonHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HP.MaHocPhan = cbbHocPhan.SelectedValue.ToString().Trim();
-            DT.MaLop = cbbMonHoc.SelectedValue.ToString().Trim();
+            HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
+            DT.MaLop = int.Parse(cbbMonHoc.Text);
 
             var tableLanThi = DT.LayDSLanThiCuaMonHoc(HP.MaHocPhan, DT.MaLop);
 

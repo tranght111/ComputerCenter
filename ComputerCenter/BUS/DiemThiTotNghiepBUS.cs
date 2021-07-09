@@ -13,7 +13,7 @@ namespace ComputerCenter.BUS
     {
         DiemThiTotNghiepDAO TN = new DiemThiTotNghiepDAO();
 
-        public DataTable LayDSHVThiDatTotNghiep(string MaKhoaHoc)
+        public DataTable LayDSHVThiDatTotNghiep(int MaKhoaHoc)
         {
             return TN.LayDSHVThiDatTotNghiep(MaKhoaHoc);
         }

@@ -11,38 +11,38 @@ namespace ComputerCenter.BUS
 {
     public class DiemThiBUS
     {
-        public string MaLop { get; set; }
-        public string MaHocPhan { get; set; }
-        public string LanThi { get; set; }
+        public int MaLop { get; set; }
+        public int MaHocPhan { get; set; }
+        public int LanThi { get; set; }
 
         DiemThiDAO DT = new DiemThiDAO();
 
-        public DataTable LayDSMonHoc(string MaKhoaHoc, string MaHocPhan)
+        public DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
         {
             return DT.LayDSMonHoc(MaKhoaHoc, MaHocPhan);
         }
 
-        public DataTable LayDSHVThiDatCuaMonHocTrongLanThi(string MaHocPhan, string MaLop, string LanThi)
+        public DataTable LayDSHVThiDatCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
             return DT.LayDSHVThiDatCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(string MaHocPhan, string MaLop, string LanThi)
+        public DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
             return DT.LayDSHVHocLaiCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
         }
 
-        public DataTable LayDSLanThiCuaMonHoc(string MaHocPhan, string MaLop)
+        public DataTable LayDSLanThiCuaMonHoc(int MaHocPhan, int MaLop)
         {
             return DT.LayDSLanThiCuaMonHoc(MaHocPhan, MaLop);
         }
 
-        public DataTable LayDSHVThiDatCuaMonHoc(string MaHocPhan, string MaLop)
+        public DataTable LayDSHVThiDatCuaMonHoc(int MaHocPhan, int MaLop)
         {
             return DT.LayDSHVThiDatCuaMonHoc(MaHocPhan, MaLop);
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHoc(string MaHocPhan, string MaLop)
+        public DataTable LayDSHVHocLaiCuaMonHoc(int MaHocPhan, int MaLop)
         {
             return DT.LayDSHVHocLaiCuaMonHoc(MaHocPhan, MaLop);
         }

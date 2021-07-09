@@ -27,14 +27,14 @@ namespace ComputerCenter.GUI
 
             cbbKhoaHocKTV.ValueMember = "MAKHOAHOC";
             cbbKhoaHocKTV.DataSource = tableKhoaHoc;
-            cbbKhoaHocKTV.DisplayMember = "TENKHOAHOC";
+            cbbKhoaHocKTV.DisplayMember = "MAKHOAHOC";
         }
 
         private void btnLapDS_Click(object sender, EventArgs e)
         {
-            KH.MaKhoaHoc = cbbKhoaHocKTV.SelectedValue.ToString().Trim();
+            KH.MaKH = int.Parse(cbbKhoaHocKTV.Text);
 
-            var table = TN.LayDSHVThiDatTotNghiep(KH.MaKhoaHoc);
+            var table = TN.LayDSHVThiDatTotNghiep(KH.MaKH);
 
             dgvDSHVTotNghiep.DataSource = table;
         }

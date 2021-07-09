@@ -10,7 +10,7 @@ namespace ComputerCenter.DAO
 {
     public class DiemThiTotNghiepDAO: XuLyDuLieu
     {
-        public DataTable LayDSHVThiDatTotNghiep(string MaKhoaHoc)
+        public DataTable LayDSHVThiDatTotNghiep(int MaKhoaHoc)
         {
             string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, D.DIEM , G.TENGV AS GV_CHAMDIEM FROM DIEMTHITOTNGHIEP D, HOCVIEN H, GIANGVIEN G WHERE H.MAHOCVIEN = D.MAHOCVIEN AND D.MAKHOAHOC = {0} AND D.DIEM >= 5 AND G.MAGV = D.MAGV", MaKhoaHoc);
             var rs = LayDuLieu(sql);
