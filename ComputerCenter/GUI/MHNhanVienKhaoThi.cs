@@ -32,9 +32,13 @@ namespace ComputerCenter.GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            TaiKhoanBUS tk = new TaiKhoanBUS();
-            tk.DangXuat();
+            TaiKhoanBUS.DangXuat();
             this.Hide();
+        }
+
+        private void MHNhanVienKhaoThi_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

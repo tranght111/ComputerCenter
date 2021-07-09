@@ -11,7 +11,7 @@ namespace ComputerCenter.DAO
 {
     public class DiemThiDAO : XuLyDuLieu
     {
-        public DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
+        public static DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
         {
             SqlConnection conn = new SqlConnection(path);
             var cmd = string.Format("SELECT* FROM v_LayDanhSachMonHoc WHERE MAKHOAHOC = {0} AND MANHOM = {1}", MaKhoaHoc, MaHocPhan);
@@ -23,23 +23,23 @@ namespace ComputerCenter.DAO
             return tableMonHoc;
         }
 
-        public DataTable LayDSHVThiDatCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
+        public static  DataTable LayDSHVThiDatCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
             string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, D.DIEM FROM DIEMTHIKTHP D, HOCVIEN H WHERE D.DIEM >= 5 AND D.MANHOM = {0} AND D.MALOP = {1} AND H.MAHOCVIEN = D.MAHOCVIEN AND D.LANTHI = {2}", MaHocPhan, MaLop, LanThi);
-            var rs = LayDuLieu(sql);
+            var rs = XuLyDuLieu.LayDuLieu(sql);
 
             return rs;
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
+        public static DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
             string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, D.DIEM FROM DIEMTHIKTHP D, HOCVIEN H WHERE D.DIEM < 5 AND D.MANHOM = {0} AND D.MALOP = {1} AND H.MAHOCVIEN = D.MAHOCVIEN AND D.LANTHI = {2}", MaHocPhan, MaLop, LanThi);
-            var rs = LayDuLieu(sql);
+            var rs = XuLyDuLieu.LayDuLieu(sql);
 
             return rs;
         }
 
-        public DataTable LayDSLanThiCuaMonHoc (int MaHocPhan, int MaLop)
+        public static DataTable LayDSLanThiCuaMonHoc (int MaHocPhan, int MaLop)
         {
             SqlConnection conn = new SqlConnection(path);
             var cmd = string.Format("SELECT DISTINCT LANTHI FROM DIEMTHIKTHP WHERE MANHOM = {0} AND MALOP = {1}", MaHocPhan, MaLop);
@@ -50,18 +50,18 @@ namespace ComputerCenter.DAO
             return tableLanThi;
         }
 
-        public DataTable LayDSHVThiDatCuaMonHoc(int MaHocPhan, int MaLop)
+        public static DataTable LayDSHVThiDatCuaMonHoc(int MaHocPhan, int MaLop)
         {
             string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, MAX(DIEM) AS DIEM FROM DIEMTHIKTHP D, HOCVIEN H WHERE MANHOM = {0} AND MALOP = {1} AND D.MAHOCVIEN = H.MAHOCVIEN AND D.DIEM >= 5 GROUP BY D.MAHOCVIEN, MANHOM, MALOP, H.TENHOCVIEN", MaHocPhan, MaLop);
-            var rs = LayDuLieu(sql);
+            var rs = XuLyDuLieu.LayDuLieu(sql);
 
             return rs;
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHoc(int MaHocPhan, int MaLop)
+        public static DataTable LayDSHVHocLaiCuaMonHoc(int MaHocPhan, int MaLop)
         {
             string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, MAX(DIEM) AS DIEM FROM DIEMTHIKTHP D, HOCVIEN H WHERE MANHOM = {0} AND MALOP = {1} AND D.MAHOCVIEN = H.MAHOCVIEN AND D.DIEM < 5 GROUP BY D.MAHOCVIEN, MANHOM, MALOP, H.TENHOCVIEN", MaHocPhan, MaLop);
-            var rs = LayDuLieu(sql);
+            var rs = XuLyDuLieu.LayDuLieu(sql);
 
             return rs;
         }

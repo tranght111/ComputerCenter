@@ -11,7 +11,7 @@ namespace ComputerCenter.DAO
     class KhoaHocDAO
     {
         static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
-        public DataTable LayDSKhoaHoc()
+        public static DataTable LayDSKhoaHoc()
         {
             SqlConnection conn = new SqlConnection(path);
             SqlDataAdapter da = new SqlDataAdapter("SELECT* FROM KHOAHOC", conn);
@@ -23,7 +23,7 @@ namespace ComputerCenter.DAO
             return tableKhoaHoc;
         }
 
-        public DataTable LayDSKhoaHocKTV()
+        public static DataTable LayDSKhoaHocKTV()
         {
             SqlConnection conn = new SqlConnection(path);
             SqlDataAdapter da = new SqlDataAdapter("SELECT* FROM KHOAHOC WHERE MALOAI = 1", conn);

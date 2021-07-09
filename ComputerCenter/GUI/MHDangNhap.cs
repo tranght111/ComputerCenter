@@ -13,7 +13,6 @@ namespace ComputerCenter.GUI
 {
     public partial class MHDangNhap : Form
     {
-        TaiKhoanBUS tk = new TaiKhoanBUS();
         public MHDangNhap()
         {
             InitializeComponent();
@@ -35,7 +34,7 @@ namespace ComputerCenter.GUI
                 username = txtUsername.Text,
                 password = txtPassword.Text
             };
-           if(tk.KtraDangNhapHopLe(tk).HasRows)
+           if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
                 if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
                 {

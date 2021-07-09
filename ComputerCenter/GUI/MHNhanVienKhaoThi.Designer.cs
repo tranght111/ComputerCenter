@@ -73,6 +73,7 @@
             this.Controls.Add(this.btnLapDSTN);
             this.Name = "MHNhanVienKhaoThi";
             this.Text = "MHNhanVienKhaoThi";
+            this.Load += new System.EventHandler(this.MHNhanVienKhaoThi_Load);
             this.ResumeLayout(false);
 
         }

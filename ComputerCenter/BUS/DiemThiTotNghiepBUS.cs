@@ -11,11 +11,10 @@ namespace ComputerCenter.BUS
 {
     public class DiemThiTotNghiepBUS
     {
-        DiemThiTotNghiepDAO TN = new DiemThiTotNghiepDAO();
 
-        public DataTable LayDSHVThiDatTotNghiep(int MaKhoaHoc)
+        public static DataTable LayDSHVThiDatTotNghiep(int MaKhoaHoc)
         {
-            return TN.LayDSHVThiDatTotNghiep(MaKhoaHoc);
+            return DiemThiTotNghiepDAO.LayDSHVThiDatTotNghiep(MaKhoaHoc);
         }
     }
 }
