@@ -38,6 +38,8 @@
             this.btnDSHVThiDat = new System.Windows.Forms.Button();
             this.btnDSHVHocLai = new System.Windows.Forms.Button();
             this.dgvDSHVHocLai = new System.Windows.Forms.DataGridView();
+            this.lbLanThi = new System.Windows.Forms.Label();
+            this.cbbLanThi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHVHocLai)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +47,7 @@
             // lbKhoaHoc
             // 
             this.lbKhoaHoc.AutoSize = true;
-            this.lbKhoaHoc.Location = new System.Drawing.Point(7, 64);
+            this.lbKhoaHoc.Location = new System.Drawing.Point(6, 15);
             this.lbKhoaHoc.Name = "lbKhoaHoc";
             this.lbKhoaHoc.Size = new System.Drawing.Size(53, 13);
             this.lbKhoaHoc.TabIndex = 0;
@@ -54,7 +56,7 @@
             // lbHocPhan
             // 
             this.lbHocPhan.AutoSize = true;
-            this.lbHocPhan.Location = new System.Drawing.Point(273, 64);
+            this.lbHocPhan.Location = new System.Drawing.Point(5, 67);
             this.lbHocPhan.Name = "lbHocPhan";
             this.lbHocPhan.Size = new System.Drawing.Size(54, 13);
             this.lbHocPhan.TabIndex = 1;
@@ -63,7 +65,7 @@
             // lbMonHoc
             // 
             this.lbMonHoc.AutoSize = true;
-            this.lbMonHoc.Location = new System.Drawing.Point(524, 64);
+            this.lbMonHoc.Location = new System.Drawing.Point(414, 15);
             this.lbMonHoc.Name = "lbMonHoc";
             this.lbMonHoc.Size = new System.Drawing.Size(49, 13);
             this.lbMonHoc.TabIndex = 2;
@@ -72,35 +74,36 @@
             // cbbHocPhan
             // 
             this.cbbHocPhan.FormattingEnabled = true;
-            this.cbbHocPhan.Location = new System.Drawing.Point(333, 61);
+            this.cbbHocPhan.Location = new System.Drawing.Point(65, 64);
             this.cbbHocPhan.Name = "cbbHocPhan";
-            this.cbbHocPhan.Size = new System.Drawing.Size(168, 21);
+            this.cbbHocPhan.Size = new System.Drawing.Size(271, 21);
             this.cbbHocPhan.TabIndex = 4;
             this.cbbHocPhan.SelectedIndexChanged += new System.EventHandler(this.cbbHocPhan_SelectedIndexChanged);
             // 
             // cbbMonHoc
             // 
             this.cbbMonHoc.FormattingEnabled = true;
-            this.cbbMonHoc.Location = new System.Drawing.Point(579, 61);
+            this.cbbMonHoc.Location = new System.Drawing.Point(469, 12);
             this.cbbMonHoc.Name = "cbbMonHoc";
-            this.cbbMonHoc.Size = new System.Drawing.Size(170, 21);
+            this.cbbMonHoc.Size = new System.Drawing.Size(277, 21);
             this.cbbMonHoc.TabIndex = 5;
+            this.cbbMonHoc.SelectedIndexChanged += new System.EventHandler(this.cbbMonHoc_SelectedIndexChanged);
             // 
             // cbbKhoaHoc
             // 
             this.cbbKhoaHoc.FormattingEnabled = true;
-            this.cbbKhoaHoc.Location = new System.Drawing.Point(66, 61);
+            this.cbbKhoaHoc.Location = new System.Drawing.Point(65, 12);
             this.cbbKhoaHoc.Name = "cbbKhoaHoc";
-            this.cbbKhoaHoc.Size = new System.Drawing.Size(175, 21);
+            this.cbbKhoaHoc.Size = new System.Drawing.Size(271, 21);
             this.cbbKhoaHoc.TabIndex = 6;
             this.cbbKhoaHoc.SelectedIndexChanged += new System.EventHandler(this.cbbKhoaHoc_SelectedIndexChanged);
             // 
             // dgvDSHV
             // 
             this.dgvDSHV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSHV.Location = new System.Drawing.Point(12, 100);
+            this.dgvDSHV.Location = new System.Drawing.Point(12, 130);
             this.dgvDSHV.Name = "dgvDSHV";
-            this.dgvDSHV.Size = new System.Drawing.Size(361, 291);
+            this.dgvDSHV.Size = new System.Drawing.Size(361, 261);
             this.dgvDSHV.TabIndex = 7;
             // 
             // btnDSHVThiDat
@@ -126,16 +129,35 @@
             // dgvDSHVHocLai
             // 
             this.dgvDSHVHocLai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSHVHocLai.Location = new System.Drawing.Point(421, 100);
+            this.dgvDSHVHocLai.Location = new System.Drawing.Point(421, 130);
             this.dgvDSHVHocLai.Name = "dgvDSHVHocLai";
-            this.dgvDSHVHocLai.Size = new System.Drawing.Size(349, 291);
+            this.dgvDSHVHocLai.Size = new System.Drawing.Size(349, 261);
             this.dgvDSHVHocLai.TabIndex = 10;
+            // 
+            // lbLanThi
+            // 
+            this.lbLanThi.AutoSize = true;
+            this.lbLanThi.Location = new System.Drawing.Point(421, 67);
+            this.lbLanThi.Name = "lbLanThi";
+            this.lbLanThi.Size = new System.Drawing.Size(39, 13);
+            this.lbLanThi.TabIndex = 11;
+            this.lbLanThi.Text = "Lần thi";
+            // 
+            // cbbLanThi
+            // 
+            this.cbbLanThi.FormattingEnabled = true;
+            this.cbbLanThi.Location = new System.Drawing.Point(469, 64);
+            this.cbbLanThi.Name = "cbbLanThi";
+            this.cbbLanThi.Size = new System.Drawing.Size(121, 21);
+            this.cbbLanThi.TabIndex = 12;
             // 
             // MHLapDSHocVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbbLanThi);
+            this.Controls.Add(this.lbLanThi);
             this.Controls.Add(this.dgvDSHVHocLai);
             this.Controls.Add(this.btnDSHVHocLai);
             this.Controls.Add(this.btnDSHVThiDat);
@@ -168,5 +190,7 @@
         private System.Windows.Forms.Button btnDSHVThiDat;
         private System.Windows.Forms.Button btnDSHVHocLai;
         private System.Windows.Forms.DataGridView dgvDSHVHocLai;
+        private System.Windows.Forms.Label lbLanThi;
+        private System.Windows.Forms.ComboBox cbbLanThi;
     }
 }

@@ -20,7 +20,10 @@ namespace ComputerCenter.DAO
 
             var rs = cmd.ExecuteReader();
             //var rs = ThucThi(sql);
+            //conn.Close();
             return rs;
         }
+
+        //public SqlDataReader 
     }
 }

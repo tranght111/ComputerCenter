@@ -36,9 +36,10 @@ namespace ComputerCenter.DAO
                     cmd.Parameters["@user"].Value = hv.Username;
 
                     cmd.ExecuteNonQuery();
-
+                    conn.Close();
                     return (int)cmd.Parameters["@RETURN_VALUE"].Value;
                 }
+                
             }
         }
     }

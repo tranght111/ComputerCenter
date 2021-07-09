@@ -37,12 +37,23 @@ namespace ComputerCenter.GUI
             };
            if(tk.KtraDangNhapHopLe(tk).HasRows)
             {
-                MessageBox.Show("Login Successful");
+                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
+                {
+                    MHNhanVienKhaoThi f = new MHNhanVienKhaoThi();
+                    f.Show();
+                    this.Hide();
+                }
             }
            else
             {
-                MessageBox.Show("Login Failed");
+                MessageBox.Show("Login Failed!!! Check your username or password!!!", "Thông báo");
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
         }
     }
 }
