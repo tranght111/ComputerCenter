@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComputerCenter.BUS;
 
 namespace ComputerCenter.GUI
 {
@@ -31,8 +32,8 @@ namespace ComputerCenter.GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            MHDangNhap f = new MHDangNhap();
-            f.Show();
+            TaiKhoanBUS tk = new TaiKhoanBUS();
+            tk.DangXuat();
             this.Hide();
         }
     }
