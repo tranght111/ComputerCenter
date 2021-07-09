@@ -11,7 +11,7 @@ namespace ComputerCenter.BUS
 {
     public class KhoaHocBUS
     {
-       public string MaKhoaHoc { get; set; }
+       public int MaKH { get; set; }
 
         KhoaHocDAO KH = new KhoaHocDAO();
 

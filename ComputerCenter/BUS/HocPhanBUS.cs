@@ -11,11 +11,11 @@ namespace ComputerCenter.BUS
 {
     public class HocPhanBUS
     {
-        public string MaHocPhan { get; set; }
+        public int MaHocPhan { get; set; }
 
         HocPhanDAO HP = new HocPhanDAO();
 
-        public DataTable LayDSNhomHocPhan(string MaKhoaHoc)
+        public DataTable LayDSNhomHocPhan(int MaKhoaHoc)
         {
             return HP.LayDSNhomHocPhan(MaKhoaHoc);
         }
