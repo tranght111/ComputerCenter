@@ -24,6 +24,5 @@ namespace ComputerCenter.DAO
             return rs;
         }
 
-        //public SqlDataReader 
     }
 }

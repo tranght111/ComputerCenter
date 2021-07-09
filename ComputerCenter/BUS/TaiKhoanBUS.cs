@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using ComputerCenter.DAO;
+using ComputerCenter.GUI;
 
 namespace ComputerCenter.BUS
 {
@@ -24,6 +25,12 @@ namespace ComputerCenter.BUS
             }
 
             return tkd.DocThongTinNguoiDung(tk);
+        }
+
+        public void DangXuat()
+        {
+            MHDangNhap f = new MHDangNhap();
+            f.Show();
         }
     }
 }
