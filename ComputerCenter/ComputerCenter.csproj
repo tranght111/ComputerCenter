@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ComputerCenter</RootNamespace>
     <AssemblyName>ComputerCenter</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -49,17 +50,37 @@
   <ItemGroup>
     <Compile Include="BUS\DiemThiBUS.cs" />
     <Compile Include="BUS\DiemThiTotNghiepBUS.cs" />
+    <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\HocPhanBUS.cs" />
     <Compile Include="BUS\HocVienBUS.cs" />
+    <Compile Include="BUS\LichThiBUS.cs" />
+    <Compile Include="BUS\LoaiKhoaHocBUS.cs" />
+    <Compile Include="BUS\MonHocBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
     <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
+    <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HocPhanDAO.cs" />
     <Compile Include="DAO\HocVienDAO.cs" />
     <Compile Include="DAO\KhoaHocDAO.cs" />
+    <Compile Include="DAO\LichThiDAO.cs" />
+    <Compile Include="DAO\LoaiKhoaHoc.cs" />
+    <Compile Include="DAO\MonHocDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLyDuLieu.cs" />
     <Compile Include="BUS\KhoaHocBUS.cs" />
+    <Compile Include="GUI\AccountantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AccountantForm.Designer.cs">
+      <DependentUpon>AccountantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MHDangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,8 +111,20 @@
     <Compile Include="GUI\MHNhanVienKhaoThi.Designer.cs">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AccountantForm.resx">
+      <DependentUpon>AccountantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHDangKy.resx">
       <DependentUpon>MHDangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHNhanVienKhaoThi.resx">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

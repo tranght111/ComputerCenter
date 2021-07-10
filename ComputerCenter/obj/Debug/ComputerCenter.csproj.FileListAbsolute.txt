@@ -12,3 +12,20 @@ C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\Comp
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhanVienKhaoThi.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.csprojAssemblyReference.cache
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.MHLapDSHocVien.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHLapDSHVTotNghiep.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhanVienKhaoThi.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.Properties.Resources.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.csproj.GenerateResource.cache
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.exe
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.pdb
+C:\Users\hp\New folder\ComputerCenter\bin\Debug\ComputerCenter.exe.config
+C:\Users\hp\New folder\ComputerCenter\bin\Debug\ComputerCenter.exe
+C:\Users\hp\New folder\ComputerCenter\bin\Debug\ComputerCenter.pdb
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.StudentForm.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.EmployeeForm.resources
+C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.AccountantForm.resources

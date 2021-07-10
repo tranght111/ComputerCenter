@@ -65,5 +65,16 @@ namespace ComputerCenter.DAO
 
             return rs;
         }
+
+        // Xem diem thi ket thuc hoc phan 
+        public static DataTable XemDiemMonHoc()
+        {
+            SqlConnection conn = new SqlConnection(path);
+            string sql = @"SELECT * FROM DIEMTHIKTHP";
+            SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }
