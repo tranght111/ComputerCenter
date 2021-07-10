@@ -33,7 +33,10 @@ namespace ComputerCenter.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             TaiKhoanBUS.DangXuat();
-            this.Hide();
+            //chỗ này nò cục dàng
+           //cái form này nó hide thui ạ nên cục dàng nàm quá nhiều lần nó sinh quá nhiều form bị lưu lại chiếm hết port để thực thi nên lỗi ạ
+            this.Close();
+            //cục dàng xử lí chỗ nào mò màn bấm đăng xuất đăng nhập show lại á
         }
 
         private void MHNhanVienKhaoThi_Load(object sender, EventArgs e)

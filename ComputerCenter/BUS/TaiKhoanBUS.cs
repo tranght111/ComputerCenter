@@ -28,8 +28,10 @@ namespace ComputerCenter.BUS
 
         public static void DangXuat()
         {
-            MHDangNhap f = new MHDangNhap();
-            f.Show();
+            //MHDangNhap f = new MHDangNhap();
+            //f.Show();
         }
     }
 }
+//cái d0p1 cục dàng chưa code, cái đó đứa khác ó anh iu dị cục dnag đăng nhập cái khác i nò
+//anh iu cho cục dàng coi chỗ sai nò
