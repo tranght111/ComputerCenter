@@ -17,5 +17,18 @@ namespace ComputerCenter.DAO
 
             return rs;
         }
+
+        // Xem diem thi tot nghiep 
+        public static DataTable XemDiemTotNghiep()
+        {
+            SqlConnection conn = new SqlConnection(path);
+            string sql = @"SELECT kh.TENKHOAHOC, d.MAHOCVIEN, d.DIEM 
+                            FROM DIEMTHITOTNGHIEP d, DANGKYKHOAHOC dk, KHOAHOC kh
+                            WHERE d.MAKHOAHOC=dk.MAKHOAHOC AND dk.MAKHOAHOC=kh.MAKHOAHOC";
+            SqlDataAdapter da = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
     }
 }

@@ -40,5 +40,16 @@ namespace ComputerCenter.GUI
         {
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btnLichThi_Click(object sender, EventArgs e)
+        {
+            EmployeeForm f = new EmployeeForm();
+            f.ShowDialog();
+        }
     }
 }

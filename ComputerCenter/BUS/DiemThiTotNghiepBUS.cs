@@ -16,5 +16,11 @@ namespace ComputerCenter.BUS
         {
             return DiemThiTotNghiepDAO.LayDSHVThiDatTotNghiep(MaKhoaHoc);
         }
+
+        // Xem diem thi tot nghiep
+        public static DataTable LayDiemCuaHocVien()
+        {
+            return DiemThiTotNghiepDAO.XemDiemTotNghiep();
+        }
     }
 }
