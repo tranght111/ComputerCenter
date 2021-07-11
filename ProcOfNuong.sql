@@ -16,6 +16,25 @@ Begin
 End
 go
 
+--DS lop hoc cua GV
+Create Or Alter Proc proc_DSLopHocCuaGV(@maGV int)
+AS
+Begin
+	select m.MALOP, m.TENLOP, m.NGAYBATDAU, m.GIOHOC
+	from MONHOC m
+	where m.MAGV = @maGV
+End
+go
+
+Create Or Alter Proc proc_LayMaGVtheoUsername(@username varchar(20))
+as
+Begin
+	select g.MAGV
+	from GIANGVIEN g
+	where g.USERNAME = @username
+End
+go
+
 -- DS Mon hoc theo Khoa hoc va Nhom HP
 Create Or Alter Proc proc_DSMonHoctheoMaKH_MaNhomHP(@makh int, @manhom int)
 As
