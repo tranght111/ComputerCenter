@@ -9,7 +9,7 @@ using ComputerCenter.BUS;
 
 namespace ComputerCenter.DAO
 {
-    public class NhomHocPhan_MonHocDAO
+    public class NhomHocPhan_MonHocDAO: XuLyDuLieu
     {
         public static DataTable LayDSNhomHocPhan_MonHoc()
         {

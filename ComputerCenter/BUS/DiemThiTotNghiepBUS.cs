@@ -76,6 +76,7 @@ namespace ComputerCenter.BUS
 
         public DataTable LayDSTatCaHVTotNghiep()
         {
+            DiemThiTotNghiepDAO TN = new DiemThiTotNghiepDAO();
             return TN.LayDSTatCaHVTotNghiep();
         }
     }

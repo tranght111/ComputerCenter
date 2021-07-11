@@ -24,6 +24,8 @@ namespace ComputerCenter.BUS
             return HocVienDAO.ThemHocVien(hocvien);
         }
 
+        HocVienDAO hv = new HocVienDAO();
+
         public DataTable XemDSHV(int makh, object manhom = null, object malop = null)
         {
             return hv.XemDSHV(makh, manhom, malop);

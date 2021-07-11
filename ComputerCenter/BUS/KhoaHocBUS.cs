@@ -18,6 +18,7 @@ namespace ComputerCenter.BUS
         public string MoTa { get; set; }
         public int MaLoaiKH { get; set; }
         public int SoLuong { get; set; }
+        public string TenLoaiKH { get; set; }
 
         public static DataTable LayDSKhoaHoc()
         {
@@ -67,14 +68,15 @@ namespace ComputerCenter.BUS
 
         public KhoaHocBUS(DataRow row)
         {
-            this.Tenkhoahoc = row["TENKHOAHOC"].ToString();
+            this.TenKH = row["TENKHOAHOC"].ToString();
             this.MaKH = (int)row["MAKHOAHOC"];
             //this.Hocphi = (int)row["HOCPHI"];
-            this.Thoigianbatdau = (DateTime)row["THOIGIANBATDAU"];
-            this.Mota = row["MOTA"].ToString();
-            this.Sltoida = (int)row["SOLUONGTOIDA"];
-            this.Loaikh = row["TENLOAIKHOAHOC"].ToString();
+            this.TimeBegin = row["THOIGIANBATDAU"].ToString();
+            this.MoTa = row["MOTA"].ToString();
+            this.SoLuong = (int)row["SOLUONGTOIDA"];
+            this.TenLoaiKH = row["TENLOAIKHOAHOC"].ToString();
         }
+        KhoaHocDAO KH = new KhoaHocDAO();
 
         public List<KhoaHocBUS> LayViewDSKhoaHoc()
         {

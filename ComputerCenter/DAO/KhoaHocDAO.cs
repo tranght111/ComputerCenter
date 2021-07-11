@@ -14,6 +14,7 @@ namespace ComputerCenter.DAO
        //Phát thay đường dẫn vô đây nữa nè 
        // Trang them cho dang nhap nv ke toan cho tui thu lun
         //static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
+
         public static DataTable LayDSKhoaHoc()
         {
             SqlConnection conn = new SqlConnection(path);
@@ -110,9 +111,6 @@ namespace ComputerCenter.DAO
 
             return tableLoaiKhoaHoc;
         }
-    }
-}
-
 
         
         public List<KhoaHocBUS> LayViewDSKhoaHoc()

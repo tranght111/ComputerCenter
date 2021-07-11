@@ -39,8 +39,8 @@ namespace ComputerCenter.GUI
         private void cbbKhoaHoc_Click(object sender, EventArgs e)
         {
             DataTable listKH = new DataTable();
-            KhoaHocBUS khBUS = new KhoaHocBUS();
-            listKH = khBUS.LayDSKhoaHoc();
+
+            listKH = KhoaHocBUS.LayDSKhoaHoc();
 
             cbbKhoaHoc.DataSource = listKH;
             cbbKhoaHoc.ValueMember = "MAKHOAHOC";
@@ -296,7 +296,7 @@ namespace ComputerCenter.GUI
             else
             {
                 int maKH = (int)cbbKhoaHoc.SelectedValue;
-                listHVTotNghiep = TN.LayDSHVThiDatTotNghiep(maKH);
+                listHVTotNghiep = DiemThiTotNghiepBUS.LayDSHVThiDatTotNghiep(maKH);
             }
 
             dgvXemDSHV.DataSource = listHVTotNghiep;

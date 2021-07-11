@@ -9,9 +9,9 @@ using ComputerCenter.BUS;
 
 namespace ComputerCenter.DAO
 {
-    public class PhieuDKThiTNDAO
+    public class PhieuDKThiTNDAO: XuLyDuLieu
     {
-        static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
+        //static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
         public static DataTable displayPhieuDKiTNForm()
         {
                 var con = new SqlConnection(path);

@@ -26,12 +26,12 @@ namespace ComputerCenter.BUS
 
         public MonHocBUS(DataRow row)
         {
-            this.Malop = (int)row["MALOP"];
-            this.Tenlop = row["TENLOP"].ToString();
+            this.MaLop = (int)row["MALOP"];
+            this.TenLop = row["TENLOP"].ToString();
             //HOCPHI
-            this.Ngaybatdau = (DateTime)row["NGAYBATDAU"];
-            this.Giohoc = row["GIOHOC"].ToString();
-            this.Magv = (int)row["MAGV"];
+            this.NgayBatDau = row["NGAYBATDAU"].ToString();
+            this.GioHoc = row["GIOHOC"].ToString();
+            this.MaGV = (int)row["MAGV"];
         }
         public static DataTable displayLHForm()
         {
@@ -71,6 +71,11 @@ namespace ComputerCenter.BUS
             return MonHocDAO.AddLopHoc(TLHBUS);
         }
 
+        public static int LayMaGVtheoUsername(string username)
+        {
+            return MonHocDAO.LayMaGVtheoUsername(username);
+        }
+
         public List<MonHocBUS> getLopHocByMaLop(int malop)
         {
             return mhDAO.getLopHocByMaLop(malop);
@@ -85,5 +90,12 @@ namespace ComputerCenter.BUS
         {
             return mhDAO.LayDSMHtheoMaKH_MaNhomHP(makh, manhom);
         }
+
+        public static DataTable LayDSLopHocCuaGV(int maGV)
+        {
+            return MonHocBUS.LayDSLopHocCuaGV(maGV);
+        }
+
+
     }
 }

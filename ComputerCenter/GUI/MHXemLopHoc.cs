@@ -15,8 +15,21 @@ namespace ComputerCenter.GUI
     {
         public MHXemLopHoc()
         {
-            InitializeComponent();
-            HienThiKH();
+            if (Global.role != "GiangVien")
+            {
+                InitializeComponent();
+                HienThiKH();
+                
+            }
+            else
+            {
+                MHThongTinLopHoc t = new MHThongTinLopHoc();
+                this.Close();
+                t.Show();
+            }
+
+            if (Global.loginname != null)
+                btnDangXuat.Enabled = true;
         }
 
         public void HienThiKH()
@@ -33,8 +46,8 @@ namespace ComputerCenter.GUI
                     TextAlign = ContentAlignment.TopLeft,
                     BackColor = Color.LightCyan
                 };
-                btn.Text = "Khoa " + item.Tenkhoahoc + "\n" + "*************************\n" + "Loai " + item.Loaikh + "\nSo luong hoc vien toi da: " + item.Sltoida
-                    + "\nHoc phi: " + item.Hocphi + "\nThoi gian bat dau: " + item.Thoigianbatdau + "\n" + item.Mota;
+                btn.Text = "Khoa " + item.TenKH + "\n" + "*************************\n" + "Loai " + item.TenLoaiKH + "\nSo luong hoc vien toi da: " + item.SoLuong
+                    + "\nHoc phi: " + item.HocPhi + "\nThoi gian bat dau: " + item.TimeBegin + "\n" + item.MoTa;
                 btn.Click += btn_Click;
                 btn.Tag = item;
 
@@ -45,13 +58,23 @@ namespace ComputerCenter.GUI
         void btn_Click(object sender, EventArgs e)
         {
             int makh = ((sender as Button).Tag as KhoaHocBUS).MaKH;
-            string tenkh = ((sender as Button).Tag as KhoaHocBUS).Tenkhoahoc;
+            string tenkh = ((sender as Button).Tag as KhoaHocBUS).TenKH;
 
             MHThongTinLopHoc lh = new MHThongTinLopHoc(makh, tenkh);
             //this.Hide();
             lh.ShowDialog();
-            this.Show();
+            lh.Show();
 
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            MHDangNhap dn = new MHDangNhap();
+            this.Hide();
+            
+            dn.Show();
+            Global.loginname = null;
+            Global.role = null;
         }
     }
 }

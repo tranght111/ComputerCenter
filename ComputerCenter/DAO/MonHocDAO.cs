@@ -163,5 +163,26 @@ namespace ComputerCenter.DAO
 
             return data;
         }
+
+        public static DataTable LayDSLopHocCuaGV(int maGV)
+        {
+            string query = "exec proc_DSLopHocCuaGV " + maGV;
+            var data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public static int LayMaGVtheoUsername(string username)
+        {
+            string query = "exec proc_LayMaGVtheoUsername '" + username + "'";
+            var data = LayDuLieu(query);
+            int maGV = 0;
+            foreach (DataRow item in data.Rows)
+            {
+                maGV = (int)item["MAGV"];
+            }
+
+            return maGV;
+        }
     }
 }

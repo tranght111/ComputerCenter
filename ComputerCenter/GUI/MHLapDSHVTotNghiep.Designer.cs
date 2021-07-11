@@ -38,49 +38,55 @@
             // lbKhoaHocKTV
             // 
             this.lbKhoaHocKTV.AutoSize = true;
-            this.lbKhoaHocKTV.Location = new System.Drawing.Point(37, 42);
+            this.lbKhoaHocKTV.Location = new System.Drawing.Point(49, 52);
+            this.lbKhoaHocKTV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbKhoaHocKTV.Name = "lbKhoaHocKTV";
-            this.lbKhoaHocKTV.Size = new System.Drawing.Size(53, 13);
+            this.lbKhoaHocKTV.Size = new System.Drawing.Size(68, 17);
             this.lbKhoaHocKTV.TabIndex = 0;
             this.lbKhoaHocKTV.Text = "Khóa học";
             // 
             // cbbKhoaHocKTV
             // 
             this.cbbKhoaHocKTV.FormattingEnabled = true;
-            this.cbbKhoaHocKTV.Location = new System.Drawing.Point(105, 39);
+            this.cbbKhoaHocKTV.Location = new System.Drawing.Point(140, 48);
+            this.cbbKhoaHocKTV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbKhoaHocKTV.Name = "cbbKhoaHocKTV";
-            this.cbbKhoaHocKTV.Size = new System.Drawing.Size(188, 21);
+            this.cbbKhoaHocKTV.Size = new System.Drawing.Size(249, 24);
             this.cbbKhoaHocKTV.TabIndex = 1;
             // 
             // dgvDSHVTotNghiep
             // 
             this.dgvDSHVTotNghiep.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSHVTotNghiep.Location = new System.Drawing.Point(12, 79);
+            this.dgvDSHVTotNghiep.Location = new System.Drawing.Point(16, 97);
+            this.dgvDSHVTotNghiep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDSHVTotNghiep.Name = "dgvDSHVTotNghiep";
-            this.dgvDSHVTotNghiep.Size = new System.Drawing.Size(649, 286);
+            this.dgvDSHVTotNghiep.RowHeadersWidth = 51;
+            this.dgvDSHVTotNghiep.Size = new System.Drawing.Size(865, 352);
             this.dgvDSHVTotNghiep.TabIndex = 2;
             // 
             // btnLapDS
             // 
-            this.btnLapDS.Location = new System.Drawing.Point(462, 39);
+            this.btnLapDS.Location = new System.Drawing.Point(616, 48);
+            this.btnLapDS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLapDS.Name = "btnLapDS";
-            this.btnLapDS.Size = new System.Drawing.Size(75, 23);
+            this.btnLapDS.Size = new System.Drawing.Size(100, 28);
             this.btnLapDS.TabIndex = 3;
-            this.btnLapDS.Text = "Lập DS";
+            this.btnLapDS.Text = "Xem";
             this.btnLapDS.UseVisualStyleBackColor = true;
             this.btnLapDS.Click += new System.EventHandler(this.btnLapDS_Click);
             // 
             // MHLapDSHVTotNghiep
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 377);
+            this.ClientSize = new System.Drawing.Size(897, 464);
             this.Controls.Add(this.btnLapDS);
             this.Controls.Add(this.dgvDSHVTotNghiep);
             this.Controls.Add(this.cbbKhoaHocKTV);
             this.Controls.Add(this.lbKhoaHocKTV);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MHLapDSHVTotNghiep";
-            this.Text = "MHLapDSHVTotNghiep";
+            this.Text = "MHXemDSHVTotNghiep";
             this.Load += new System.EventHandler(this.MHLapDSHVTotNghiep_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSHVTotNghiep)).EndInit();
             this.ResumeLayout(false);

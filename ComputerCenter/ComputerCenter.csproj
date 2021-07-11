@@ -57,6 +57,7 @@
     <Compile Include="BUS\LichThiBUS.cs" />
     <Compile Include="BUS\LoaiKhoaHocBUS.cs" />
     <Compile Include="BUS\MonHocBUS.cs" />
+    <Compile Include="BUS\NhomHocPhanBUS.cs" />
     <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
     <Compile Include="BUS\PhieuDKThiTNBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
@@ -72,7 +73,6 @@
     <Compile Include="DAO\MonHocDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\PhieuDKThiTNDAO.cs" />
-    <Compile Include="DAO\MonHocDAO.cs" />
     <Compile Include="DAO\NhomHocPhanDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="GUI\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHDangKyHoacDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHDangKyHoacDangNhap.Designer.cs">
+      <DependentUpon>MHDangKyHoacDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MHQuanLyKhoaHoc.cs">
       <SubType>Form</SubType>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHDangKyHoacDangNhap.resx">
+      <DependentUpon>MHDangKyHoacDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHQuanLyKhoaHoc.resx">
       <DependentUpon>MHQuanLyKhoaHoc.cs</DependentUpon>

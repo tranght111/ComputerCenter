@@ -14,10 +14,20 @@ namespace ComputerCenter.GUI
     public partial class MHThongTinLopHoc : Form
     {
         int MaKH = 0;
+
+        public MHThongTinLopHoc()
+        {
+            InitializeComponent();
+            btnDkyKH.Enabled = false;
+            int maGV = MonHocBUS.LayMaGVtheoUsername(Global.loginname);
+            ShowLopHoctheoMaGV(maGV);
+        }
+
         public MHThongTinLopHoc(int makh, string tenkh)
         {
             InitializeComponent();
             MaKH = makh;
+
             ShowLopHoc(makh);
             labelTenKH.Text = "Khoa hoc " + tenkh + "\nDanh sach lop hoc:";
         }
@@ -29,7 +39,10 @@ namespace ComputerCenter.GUI
 
         }
 
-        
+        void ShowLopHoctheoMaGV(int maGV)
+        {
+            dgvLopHocInfo.DataSource = MonHocBUS.LayDSLopHocCuaGV(maGV);
+        }
 
 
         private void btnTroLai_Click_1(object sender, EventArgs e) //thoat form
@@ -39,23 +52,40 @@ namespace ComputerCenter.GUI
 
         private void btnDkyKH_Click(object sender, EventArgs e) //dang ky khoa hoc
         {
-            string username = "nuong"; // = username cua hoc vien khi dang nhap
-        HocVienBUS hv = new HocVienBUS();
-        int maHV = hv.LayMaHVtheoUsername(username);
+            string username = Global.loginname; // = username cua hoc vien khi dang nhap
+            HocVienBUS hv = new HocVienBUS();
+            int maHV = hv.LayMaHVtheoUsername(username);
 
-        KhoaHocBUS kh = new KhoaHocBUS();
+            KhoaHocBUS kh = new KhoaHocBUS();
 
             if (kh.KtraSLHocVienDK(MaKH))
-                if (kh.DangKyKhoaHoc(MaKH, maHV) == 1)
+            {
+                if (username != null)
                 {
-                    MessageBox.Show("Đăng ký khoá học thành công! \nVui lòng đóng học phí để bắt đầu khoá học!");
+                    if (kh.DangKyKhoaHoc(MaKH, maHV) == 1)
+                    {
+                        MessageBox.Show("Đăng ký khoá học thành công! \nVui lòng đóng học phí để bắt đầu khoá học!");
+                        StudentForm student = new StudentForm();
+                        this.Close();
+                        student.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error! Vui lòng đăng ký lại!");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Error! Vui lòng đăng ký lại!");
+                    MHDangKyHoacDangNhap f = new MHDangKyHoacDangNhap();
+                    this.Hide();
+                    f.ShowDialog();
+                    f.Show();
                 }
+            }
             else
                 MessageBox.Show("Khoá học đã đủ học viên, vui lòng chọn khoá học khác!");
+
         }
     }
 }

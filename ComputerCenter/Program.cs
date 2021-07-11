@@ -12,7 +12,9 @@ namespace ComputerCenter
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
         [STAThread]
+
         static void Main()
         {
             Application.EnableVisualStyles();
@@ -22,6 +24,15 @@ namespace ComputerCenter
             Application.Run(new MHDangNhap());
             //Application.Run(new MHXemLopHoc());
             //Application.Run(new MHXemDanhSachHocVien());
+            //Application.Run(new EmployeeForm());
         }
+
+    }
+
+    public class Global
+    {
+        public static string loginname;
+        public static string password;
+        public static string role;
     }
 }

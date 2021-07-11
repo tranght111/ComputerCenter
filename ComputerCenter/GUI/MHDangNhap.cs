@@ -34,6 +34,11 @@ namespace ComputerCenter.GUI
                 username = txtUsername.Text,
                 password = txtPassword.Text
             };
+
+            Global.loginname = txtUsername.Text;
+            Global.password = txtPassword.Text;
+            Global.role = tk.role;
+
            if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
                 if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
@@ -44,14 +49,8 @@ namespace ComputerCenter.GUI
                     f.Show();
                     f.FormClosed += F_FormClosed;
                 }
-                if (tk.username.StartsWith("hv") || tk.username.StartsWith("HV") || tk.username.StartsWith("Hv"))
-                {
-                    StudentForm f = new StudentForm();
-                    
-                    this.Hide();
-                    f.Show();
-                    f.FormClosed += F_FormClosed;
-                }
+                
+                else
                 if (tk.username.StartsWith("nvktoan") || tk.username.StartsWith("NVKTOAN") || tk.username.StartsWith("Nvktoan"))
                 {
                     AccountantForm f = new AccountantForm();
@@ -59,6 +58,15 @@ namespace ComputerCenter.GUI
                     this.Hide();
                     f.Show();
                     f.FormClosed += F_FormClosed;
+                }
+                else
+                {
+                    StudentForm f = new StudentForm();
+
+                    this.Hide();
+                    f.Show();
+                    f.FormClosed += F_FormClosed;
+                    
                 }
 
                 
@@ -72,7 +80,8 @@ namespace ComputerCenter.GUI
             {
                 MHXemLopHoc f = new MHXemLopHoc();
                 this.Hide();
-                f.Show();
+                f.ShowDialog();
+                this.Show();
             }
         }
 
@@ -89,6 +98,14 @@ namespace ComputerCenter.GUI
             txtUsername.Text = "";
             txtPassword.Text = "";
             cbbRole.SelectedIndex = -1;
+        }
+
+        private void btnKhach_Click(object sender, EventArgs e)
+        {
+            MHXemLopHoc xemLH = new MHXemLopHoc();
+            this.Hide();
+            xemLH.ShowDialog();
+            //xemLH.Show();
         }
     }
 }
