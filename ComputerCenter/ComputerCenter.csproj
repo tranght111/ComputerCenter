@@ -56,6 +56,8 @@
     <Compile Include="BUS\LichThiBUS.cs" />
     <Compile Include="BUS\LoaiKhoaHocBUS.cs" />
     <Compile Include="BUS\MonHocBUS.cs" />
+    <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
+    <Compile Include="BUS\PhieuDKThiTNBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
     <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
@@ -66,6 +68,8 @@
     <Compile Include="DAO\LichThiDAO.cs" />
     <Compile Include="DAO\LoaiKhoaHoc.cs" />
     <Compile Include="DAO\MonHocDAO.cs" />
+    <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
+    <Compile Include="DAO\PhieuDKThiTNDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLyDuLieu.cs" />
     <Compile Include="BUS\KhoaHocBUS.cs" />
@@ -80,6 +84,18 @@
     </Compile>
     <Compile Include="GUI\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyKhoaHoc.designer.cs">
+      <DependentUpon>MHQuanLyKhoaHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyLopHoc.designer.cs">
+      <DependentUpon>MHQuanLyLopHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MHDangKy.cs">
       <SubType>Form</SubType>
@@ -105,17 +121,47 @@
     <Compile Include="GUI\MHLapDSHVTotNghiep.Designer.cs">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MHLapPhieuDKiTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHLapPhieuDKiTN.designer.cs">
+      <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MHNhanVienKhaoThi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\MHNhanVienKhaoThi.Designer.cs">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MHQuanLyDiemThiKetThucHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyDiemThiKetThucHocPhan.designer.cs">
+      <DependentUpon>MHQuanLyDiemThiKetThucHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyDiemThiTotNghiep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHQuanLyDiemThiTotNghiep.designer.cs">
+      <DependentUpon>MHQuanLyDiemThiTotNghiep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHThemLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHThemLopHoc.designer.cs">
+      <DependentUpon>MHThemLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\StudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\StudentForm.Designer.cs">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHNhapDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHNhapDiem.designer.cs">
+      <DependentUpon>MHNhapDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHQuanLyKhoaHoc.resx">
+      <DependentUpon>MHQuanLyKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHQuanLyLopHoc.resx">
+      <DependentUpon>MHQuanLyLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHDangKy.resx">
       <DependentUpon>MHDangKy.cs</DependentUpon>
@@ -137,11 +189,26 @@
     <EmbeddedResource Include="GUI\MHLapDSHVTotNghiep.resx">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHLapPhieuDKiTN.resx">
+      <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHNhanVienKhaoThi.resx">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHQuanLyDiemThiKetThucHocPhan.resx">
+      <DependentUpon>MHQuanLyDiemThiKetThucHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHQuanLyDiemThiTotNghiep.resx">
+      <DependentUpon>MHQuanLyDiemThiTotNghiep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHThemLopHoc.resx">
+      <DependentUpon>MHThemLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHNhapDiem.resx">
+      <DependentUpon>MHNhapDiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

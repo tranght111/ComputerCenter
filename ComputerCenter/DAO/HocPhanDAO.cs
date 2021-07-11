@@ -23,5 +23,19 @@ namespace ComputerCenter.DAO
             return tableHocPhan;
         }
 
+        public static DataTable cbbLayDanhSachMaNhomHP()
+        {
+            SqlConnection con = new SqlConnection(path);
+            con = new SqlConnection(path);
+            string query = "SELECT * FROM NHOMHOCPHAN";
+            var cmd = new SqlCommand(query);
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+
+            var tableNHP = new DataTable();
+            da.Fill(tableNHP);
+            da.Dispose();
+
+            return tableNHP;
+        }
     }
 }

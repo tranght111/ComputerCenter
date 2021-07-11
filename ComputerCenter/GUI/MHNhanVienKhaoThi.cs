@@ -33,7 +33,9 @@ namespace ComputerCenter.GUI
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             TaiKhoanBUS.DangXuat();
-            this.Hide();
+            this.Close();
+            /*MHDangNhap f = new MHDangNhap();
+            f.Show();*/
         }
 
         private void MHNhanVienKhaoThi_Load(object sender, EventArgs e)
@@ -49,6 +51,24 @@ namespace ComputerCenter.GUI
         private void btnLichThi_Click(object sender, EventArgs e)
         {
             EmployeeForm f = new EmployeeForm();
+            f.ShowDialog();
+        }
+
+        private void btnXemKhoaHoc_Click(object sender, EventArgs e)
+        {
+            MHQuanLyKhoaHoc f = new MHQuanLyKhoaHoc();
+            f.ShowDialog();
+        }
+
+        private void btnLapPhieuDKthiTn_Click(object sender, EventArgs e)
+        {
+            MHLapPhieuDKiTN f = new MHLapPhieuDKiTN();
+            f.ShowDialog();
+        }
+
+        private void btnNhapDiemThi_Click(object sender, EventArgs e)
+        {
+            MHNhapDiem f = new MHNhapDiem();
             f.ShowDialog();
         }
     }
