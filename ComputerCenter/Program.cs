@@ -18,6 +18,7 @@ namespace ComputerCenter
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new MHNhanVienKhaoThi());
+            //Application.Run(new MHQuanLyKhoaHoc());
             Application.Run(new MHDangNhap());
         }
     }

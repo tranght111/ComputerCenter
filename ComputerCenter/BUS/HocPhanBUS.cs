@@ -18,5 +18,11 @@ namespace ComputerCenter.BUS
         {
             return HocPhanDAO.LayDSNhomHocPhan(MaKhoaHoc);
         }
+
+        public static DataTable cbbLayDanhSachMaNhomHP()
+        {
+            return HocPhanDAO.cbbLayDanhSachMaNhomHP();
+        }
+
     }
 }

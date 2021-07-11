@@ -11,9 +11,11 @@ namespace ComputerCenter.BUS
 {
     public class DiemThiBUS
     {
+        public int MaHV { get; set; }
         public int MaLop { get; set; }
         public int MaHocPhan { get; set; }
         public int LanThi { get; set; }
+        public float DiemKTHP { get; set; }
 
         public static DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
         {
@@ -49,6 +51,36 @@ namespace ComputerCenter.BUS
         public static DataTable LayDSDiemCuaHocVien()
         {
             return DiemThiDAO.XemDiemMonHoc();
+        }
+
+        public static DataTable cbbMaHVKTHPForm()
+        {
+            return DiemThiDAO.cbbMaHVKTHPForm();
+        }
+
+        public static DataTable displayDiemKTHPForm()
+        {
+            return DiemThiDAO.displayKTHP();
+        }
+
+        public static int AddDiemKTHPForm(DiemThiBUS DKTHPBUS)
+        {
+            return DiemThiDAO.AddDiemKTHPForm(DKTHPBUS);
+        }
+
+        public static int EditDiemKTHPForm(DiemThiBUS DKTPBUS)
+        {
+            return DiemThiDAO.EditDiemKTHPForm(DKTPBUS);
+        }
+
+        public static int DelDiemKTHPForm(int MaHV1, int MaLop1, int MaNhom1, int LanThi1)
+        {
+            return DiemThiDAO.DelDiemKTHPForm(MaHV1, MaLop1, MaNhom1, LanThi1);
+        }
+
+        public static DataTable SearchDiemKTHPForm()
+        {
+            return DiemThiDAO.SearchDiemKTHPForm();
         }
     }
 }

@@ -29,3 +29,13 @@ C:\Users\hp\New folder\ComputerCenter\bin\Debug\ComputerCenter.pdb
 C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.StudentForm.resources
 C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.EmployeeForm.resources
 C:\Users\hp\New folder\ComputerCenter\obj\Debug\ComputerCenter.GUI.AccountantForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.AccountantForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.EmployeeForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyDiemThiTotNghiep.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.StudentForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyDiemThiKetThucHocPhan.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhapDiem.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHLapPhieuDKiTN.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHThemLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyKhoaHoc.resources
