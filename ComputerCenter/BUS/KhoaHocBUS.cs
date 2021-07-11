@@ -54,5 +54,15 @@ namespace ComputerCenter.BUS
         {
             return KH.LayViewDSKhoaHoc();
         }
+
+        public int DangKyKhoaHoc(int makh, int mahv)
+        {
+            return KH.DangKyKhoaHoc(makh, mahv);
+        }
+
+        public bool KtraSLHocVienDK(int makh)
+        {
+            return KH.KtraSLHocVienDK(makh);
+        }
     }
 }

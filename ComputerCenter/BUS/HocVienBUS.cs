@@ -80,5 +80,10 @@ namespace ComputerCenter.BUS
         {
             return hv.LayDSHVPhucKhaoDiemKTHPtheoMaKH_MaNhomHP_MaLop(makh, manhom, malop);
         }
+
+        public int LayMaHVtheoUsername(string username)
+        {
+            return hv.LayMaHVtheoUsername(username);
+        }
     }
 }

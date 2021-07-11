@@ -13,9 +13,11 @@ namespace ComputerCenter.GUI
 {
     public partial class MHThongTinLopHoc : Form
     {
+        int MaKH = 0;
         public MHThongTinLopHoc(int makh, string tenkh)
         {
             InitializeComponent();
+            MaKH = makh;
             ShowLopHoc(makh);
             labelTenKH.Text = "Khoa hoc " + tenkh + "\nDanh sach lop hoc:";
         }
@@ -35,9 +37,25 @@ namespace ComputerCenter.GUI
             this.Close();
         }
 
-        private void btnDkyKH_Click(object sender, EventArgs e) // dang ky tai khoan
+        private void btnDkyKH_Click(object sender, EventArgs e) //dang ky khoa hoc
         {
+            string username = "nuong"; // = username cua hoc vien khi dang nhap
+        HocVienBUS hv = new HocVienBUS();
+        int maHV = hv.LayMaHVtheoUsername(username);
 
+        KhoaHocBUS kh = new KhoaHocBUS();
+
+            if (kh.KtraSLHocVienDK(MaKH))
+                if (kh.DangKyKhoaHoc(MaKH, maHV) == 1)
+                {
+                    MessageBox.Show("Đăng ký khoá học thành công! \nVui lòng đóng học phí để bắt đầu khoá học!");
+                }
+                else
+                {
+                    MessageBox.Show("Error! Vui lòng đăng ký lại!");
+                }
+            else
+                MessageBox.Show("Khoá học đã đủ học viên, vui lòng chọn khoá học khác!");
         }
     }
 }

@@ -51,5 +51,37 @@ namespace ComputerCenter.DAO
             }
             return KHList;
         }
+
+        public int DangKyKhoaHoc(int makh, int mahv)
+        {
+            string query = "insert into dbo.DANGKYKHOAHOC values (" + makh + ", " + mahv + ")";
+            int rs = ThucThi(query);
+
+            return rs;
+        }
+
+        public bool KtraSLHocVienDK(int makh)
+        {
+            string query = "exec proc_SLHocVienDKKhoaHoc " + makh;
+            var t = LayDuLieu(query);
+            int sldk = 0;
+            foreach (DataRow item in t.Rows)
+            {
+                sldk = (int)item["SL"];
+            }
+
+            string query2 = "Select SOLUONGTOIDA from KHOAHOC where MAKHOAHOC = " + makh;
+            t = LayDuLieu(query2);
+            int max = 0;
+
+            foreach (DataRow item in t.Rows)
+            {
+                max = (int)item["SOLUONGTOIDA"];
+            }
+
+            if (sldk < max)
+                return true;
+            return false;
+        }
     }
 }

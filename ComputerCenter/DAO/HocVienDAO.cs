@@ -146,5 +146,18 @@ namespace ComputerCenter.DAO
 
             return data;
         }
+
+        public int LayMaHVtheoUsername(string username)
+        {
+            string query = "select MAHOCVIEN from HOCVIEN where USERNAME = '" + username + "'";
+            var t = LayDuLieu(query);
+            int maHV = 0;
+            foreach (DataRow item in t.Rows)
+            {
+                maHV = (int)item["MAHOCVIEN"];
+            }
+
+            return maHV;
+        }
     }
 }
