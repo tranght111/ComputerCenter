@@ -12,3 +12,20 @@ C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\Comp
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhanVienKhaoThi.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.exe.config
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.exe
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\bin\Debug\ComputerCenter.pdb
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.AssemblyReference.cache
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.MHLapDSHocVien.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHLapDSHVTotNghiep.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhanVienKhaoThi.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHXemLopHoc.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.Properties.Resources.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.GenerateResource.cache
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.exe
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.pdb
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHXemDanhSachHocVien.resources
+E:\HK 6\PTTK\da\final\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHThongTinLopHoc.resources

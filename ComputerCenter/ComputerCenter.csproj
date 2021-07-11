@@ -48,15 +48,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\DiemThiBUS.cs" />
+    <Compile Include="BUS\DiemThiKTHPBUS.cs" />
     <Compile Include="BUS\DiemThiTotNghiepBUS.cs" />
     <Compile Include="BUS\HocPhanBUS.cs" />
     <Compile Include="BUS\HocVienBUS.cs" />
+    <Compile Include="BUS\MonHocBUS.cs" />
+    <Compile Include="BUS\NhomHocPhanBUS.cs" />
+    <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
+    <Compile Include="DAO\DiemThiKTHPDAO.cs" />
     <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
     <Compile Include="DAO\HocPhanDAO.cs" />
     <Compile Include="DAO\HocVienDAO.cs" />
     <Compile Include="DAO\KhoaHocDAO.cs" />
+    <Compile Include="DAO\MonHocDAO.cs" />
+    <Compile Include="DAO\NhomHocPhanDAO.cs" />
+    <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLyDuLieu.cs" />
     <Compile Include="BUS\KhoaHocBUS.cs" />
@@ -84,11 +92,29 @@
     <Compile Include="GUI\MHLapDSHVTotNghiep.Designer.cs">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MHThongTinLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHThongTinLopHoc.Designer.cs">
+      <DependentUpon>MHThongTinLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MHNhanVienKhaoThi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\MHNhanVienKhaoThi.Designer.cs">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHXemDanhSachHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHXemDanhSachHocVien.Designer.cs">
+      <DependentUpon>MHXemDanhSachHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHXemLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHXemLopHoc.Designer.cs">
+      <DependentUpon>MHXemLopHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -104,8 +130,17 @@
     <EmbeddedResource Include="GUI\MHLapDSHVTotNghiep.resx">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHThongTinLopHoc.resx">
+      <DependentUpon>MHThongTinLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHNhanVienKhaoThi.resx">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHXemDanhSachHocVien.resx">
+      <DependentUpon>MHXemDanhSachHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHXemLopHoc.resx">
+      <DependentUpon>MHXemLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

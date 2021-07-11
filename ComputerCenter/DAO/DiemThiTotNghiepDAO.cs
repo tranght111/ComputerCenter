@@ -17,5 +17,13 @@ namespace ComputerCenter.DAO
 
             return rs;
         }
+
+        public DataTable LayDSTatCaHVTotNghiep()
+        {
+            string sql = string.Format("SELECT D.MAHOCVIEN, H.TENHOCVIEN, D.DIEM , G.TENGV AS GV_CHAMDIEM FROM DIEMTHITOTNGHIEP D, HOCVIEN H, GIANGVIEN G WHERE H.MAHOCVIEN = D.MAHOCVIEN AND D.DIEM >= 5 AND G.MAGV = D.MAGV");
+            var rs = LayDuLieu(sql);
+
+            return rs;
+        }
     }
 }

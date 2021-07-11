@@ -32,5 +32,10 @@ namespace ComputerCenter.BUS
             MHDangNhap f = new MHDangNhap();
             f.Show();
         }
+
+        public string getRoleOfUser(string username)
+        {
+            return tkd.getRoleOfUser(username);
+        }
     }
 }

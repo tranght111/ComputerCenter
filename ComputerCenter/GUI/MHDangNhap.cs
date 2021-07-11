@@ -43,10 +43,19 @@ namespace ComputerCenter.GUI
                     f.Show();
                     this.Hide();
                 }
+
+                
             }
            else
             {
                 MessageBox.Show("Login Failed!!! Check your username or password!!!", "Thông báo");
+            }
+
+            if (tk.getRoleOfUser(tk.username) == "HocVien")
+            {
+                MHXemLopHoc f = new MHXemLopHoc();
+                this.Hide();
+                f.Show();
             }
         }
 

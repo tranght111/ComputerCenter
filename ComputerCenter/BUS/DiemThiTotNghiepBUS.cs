@@ -17,5 +17,10 @@ namespace ComputerCenter.BUS
         {
             return TN.LayDSHVThiDatTotNghiep(MaKhoaHoc);
         }
+
+        public DataTable LayDSTatCaHVTotNghiep()
+        {
+            return TN.LayDSTatCaHVTotNghiep();
+        }
     }
 }

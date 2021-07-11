@@ -22,7 +22,7 @@ namespace ComputerCenter.DAO
 
         public int KtraUsernameHopLe(HocVienBUS hv)
         {
-            string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
+            //string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
             using (var conn = new SqlConnection(path))
             {
                 conn.Open();
@@ -41,6 +41,110 @@ namespace ComputerCenter.DAO
                 }
                 
             }
+        }
+
+
+        public DataTable XemDSHV(int makh, object manhom = null, object malop = null)
+        {
+            DataTable data = new DataTable();
+            object[] parameters = new object[] { makh, manhom, malop };
+
+            string query = string.Format("exec proc_DSHocVien '{0}', '{1}', '{2}'", parameters);
+
+            //data = LoadDataWithParameters(query, parameters);
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable XemTatCaHocVien()
+        {
+            DataTable data = new DataTable();
+            string query = "select * from view_AllHocVien";
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVtheoMaKH(int makh)
+        {
+            DataTable data = new DataTable();
+            string query = "exec proc_DSHVtheoMaKH " + makh;
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVtheoMaKH_MaNhomHP(int makh, int manhom)
+        {
+            DataTable data = new DataTable();
+            string query = string.Format("exec proc_DSHVtheoMaKHvaMaNhomHP '{0}', '{1}'", makh, manhom);
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVtheoMaKH_MaNhomHP_MaLop(int makh, int manhom, int malop)
+        {
+            DataTable data = new DataTable();
+            string query = string.Format("exec proc_DSHVtheoMaKH_MaNhomHP_MaLop '{0}', '{1}', '{2}'", makh, manhom, malop);
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPKDiemTN()
+        {
+            DataTable data = new DataTable();
+            string query = "select * from View_DSHocVienPhucKhaoDiemTN";
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPKDiemTNtheoKH(int makh)
+        {
+            DataTable data = new DataTable();
+            string query = "exec proc_DSHocVienPhucKhaoDiemTNTheoKH " + makh;
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPhucKhaoDiemKTHP()
+        {
+            DataTable data = new DataTable();
+            string query = "select * from view_DSHVPhucKhaoDiemKTHP";
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPhucKhaoDiemKTHPtheoMaKH(int makh)
+        {
+            DataTable data = new DataTable();
+            string query = "exec proc_DSHVPhucKhaoDiemKTHPtheoKH " + makh;
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPhucKhaoDiemKTHPtheoMaKH_MaNhomHP(int makh, int manhom)
+        {
+            DataTable data = new DataTable();
+            string query = string.Format("exec proc_DSHVPhucKhaoDiemKTHPtheoKH_NhomHP '{0}', '{1}'", makh, manhom);
+            data = LayDuLieu(query);
+
+            return data;
+        }
+
+        public DataTable LayDSHVPhucKhaoDiemKTHPtheoMaKH_MaNhomHP_MaLop(int makh, int manhom, int malop)
+        {
+            DataTable data = new DataTable();
+            string query = string.Format("exec proc_DSHVPhucKhaoDiemKTHPtheoKH_NhomHP_MaLop '{0}', '{1}', '{2}'", makh, manhom, malop);
+            data = LayDuLieu(query);
+
+            return data;
         }
     }
 }

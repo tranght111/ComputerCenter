@@ -9,7 +9,7 @@ BEGIN
 	INSERT INTO [dbo].[HOCVIEN](MAHOCVIEN, TENHOCVIEN, GIOITINH, DIACHI, NGAYSINH, SDT, EMAIL, USERNAME, PASSWORD)
 	VALUES(@mahocvien, @ten, @gioitinh, @diachi, @ngaysinh, @sdt, @email, @user, @pass) 
 END
-
+go
 --func KTraUsernameHopLe
 CREATE FUNCTION [dbo].[KTraUsernameHopLe](@user VARCHAR(20))
 RETURNS int
