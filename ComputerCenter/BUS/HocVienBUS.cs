@@ -18,12 +18,10 @@ namespace ComputerCenter.BUS
         public string Username { get; set; }
         public string Password { get; set; }
 
-        HocVienDAO hv = new HocVienDAO();
-
-        public int ThemHocVien(HocVienBUS hocvien)
+        public static int ThemHocVien(HocVienBUS hocvien)
         {
-            if (hv.KtraUsernameHopLe(hocvien) != 0) return -1;
-            return hv.ThemHocVien(hocvien);
+            if (HocVienDAO.KtraUsernameHopLe(hocvien) != 0) return -1;
+            return HocVienDAO.ThemHocVien(hocvien);
         }
 
         public DataTable XemDSHV(int makh, object manhom = null, object malop = null)

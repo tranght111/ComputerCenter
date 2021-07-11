@@ -23,7 +23,7 @@ namespace ComputerCenter.GUI
 
         private void MHLapDSHVTotNghiep_Load(object sender, EventArgs e)
         {
-            var tableKhoaHoc = KH.LayDSKhoaHocKTV();
+            var tableKhoaHoc = KhoaHocBUS.LayDSKhoaHocKTV();
 
             cbbKhoaHocKTV.ValueMember = "MAKHOAHOC";
             cbbKhoaHocKTV.DataSource = tableKhoaHoc;
@@ -34,7 +34,7 @@ namespace ComputerCenter.GUI
         {
             KH.MaKH = int.Parse(cbbKhoaHocKTV.Text);
 
-            var table = TN.LayDSHVThiDatTotNghiep(KH.MaKH);
+            var table = DiemThiTotNghiepBUS.LayDSHVThiDatTotNghiep(KH.MaKH);
 
             dgvDSHVTotNghiep.DataSource = table;
         }

@@ -12,7 +12,7 @@ namespace ComputerCenter.DAO
 {
     class HocVienDAO:XuLyDuLieu
     {
-        public int ThemHocVien(HocVienBUS hocvien)
+        public static int ThemHocVien(HocVienBUS hocvien)
         {
             string sql = string.Format("execute proc_ThemHocVien '{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}'", hocvien.TenHV, hocvien.GioiTinh, hocvien.DiaChi, hocvien.NgaySinh, hocvien.SDT, hocvien.Email, hocvien.Username, hocvien.Password);
             var rs = ThucThi(sql);
@@ -20,7 +20,7 @@ namespace ComputerCenter.DAO
             return rs;
         }
 
-        public int KtraUsernameHopLe(HocVienBUS hv)
+        public static int KtraUsernameHopLe(HocVienBUS hv)
         {
             //string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
             using (var conn = new SqlConnection(path))

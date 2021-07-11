@@ -11,40 +11,76 @@ namespace ComputerCenter.BUS
 {
     public class DiemThiBUS
     {
+        public int MaHV { get; set; }
         public int MaLop { get; set; }
         public int MaHocPhan { get; set; }
         public int LanThi { get; set; }
+        public float DiemKTHP { get; set; }
 
-        DiemThiDAO DT = new DiemThiDAO();
-
-        public DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
+        public static DataTable LayDSMonHoc(int MaKhoaHoc, int MaHocPhan)
         {
-            return DT.LayDSMonHoc(MaKhoaHoc, MaHocPhan);
+            return DiemThiDAO.LayDSMonHoc(MaKhoaHoc, MaHocPhan);
         }
 
-        public DataTable LayDSHVThiDatCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
+        public static DataTable LayDSHVThiDatCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
-            return DT.LayDSHVThiDatCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
+            return DiemThiDAO.LayDSHVThiDatCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
+        public static DataTable LayDSHVHocLaiCuaMonHocTrongLanThi(int MaHocPhan, int MaLop, int LanThi)
         {
-            return DT.LayDSHVHocLaiCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
+            return DiemThiDAO.LayDSHVHocLaiCuaMonHocTrongLanThi(MaHocPhan, MaLop, LanThi);
         }
 
-        public DataTable LayDSLanThiCuaMonHoc(int MaHocPhan, int MaLop)
+        public static DataTable LayDSLanThiCuaMonHoc(int MaHocPhan, int MaLop)
         {
-            return DT.LayDSLanThiCuaMonHoc(MaHocPhan, MaLop);
+            return DiemThiDAO.LayDSLanThiCuaMonHoc(MaHocPhan, MaLop);
         }
 
-        public DataTable LayDSHVThiDatCuaMonHoc(int MaHocPhan, int MaLop)
+        public static DataTable LayDSHVThiDatCuaMonHoc(int MaHocPhan, int MaLop)
         {
-            return DT.LayDSHVThiDatCuaMonHoc(MaHocPhan, MaLop);
+            return DiemThiDAO.LayDSHVThiDatCuaMonHoc(MaHocPhan, MaLop);
         }
 
-        public DataTable LayDSHVHocLaiCuaMonHoc(int MaHocPhan, int MaLop)
+        public static DataTable LayDSHVHocLaiCuaMonHoc(int MaHocPhan, int MaLop)
         {
-            return DT.LayDSHVHocLaiCuaMonHoc(MaHocPhan, MaLop);
+            return DiemThiDAO.LayDSHVHocLaiCuaMonHoc(MaHocPhan, MaLop);
+        }
+
+        // Xem diem thi ket thuc hoc phan
+        public static DataTable LayDSDiemCuaHocVien()
+        {
+            return DiemThiDAO.XemDiemMonHoc();
+        }
+
+        public static DataTable cbbMaHVKTHPForm()
+        {
+            return DiemThiDAO.cbbMaHVKTHPForm();
+        }
+
+        public static DataTable displayDiemKTHPForm()
+        {
+            return DiemThiDAO.displayKTHP();
+        }
+
+        public static int AddDiemKTHPForm(DiemThiBUS DKTHPBUS)
+        {
+            return DiemThiDAO.AddDiemKTHPForm(DKTHPBUS);
+        }
+
+        public static int EditDiemKTHPForm(DiemThiBUS DKTPBUS)
+        {
+            return DiemThiDAO.EditDiemKTHPForm(DKTPBUS);
+        }
+
+        public static int DelDiemKTHPForm(int MaHV1, int MaLop1, int MaNhom1, int LanThi1)
+        {
+            return DiemThiDAO.DelDiemKTHPForm(MaHV1, MaLop1, MaNhom1, LanThi1);
+        }
+
+        public static DataTable SearchDiemKTHPForm()
+        {
+            return DiemThiDAO.SearchDiemKTHPForm();
         }
     }
 }

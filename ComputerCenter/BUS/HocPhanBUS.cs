@@ -13,11 +13,16 @@ namespace ComputerCenter.BUS
     {
         public int MaHocPhan { get; set; }
 
-        HocPhanDAO HP = new HocPhanDAO();
 
-        public DataTable LayDSNhomHocPhan(int MaKhoaHoc)
+        public static DataTable LayDSNhomHocPhan(int MaKhoaHoc)
         {
-            return HP.LayDSNhomHocPhan(MaKhoaHoc);
+            return HocPhanDAO.LayDSNhomHocPhan(MaKhoaHoc);
         }
+
+        public static DataTable cbbLayDanhSachMaNhomHP()
+        {
+            return HocPhanDAO.cbbLayDanhSachMaNhomHP();
+        }
+
     }
 }

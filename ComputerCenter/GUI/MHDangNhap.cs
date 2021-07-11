@@ -13,7 +13,6 @@ namespace ComputerCenter.GUI
 {
     public partial class MHDangNhap : Form
     {
-        TaiKhoanBUS tk = new TaiKhoanBUS();
         public MHDangNhap()
         {
             InitializeComponent();
@@ -35,13 +34,31 @@ namespace ComputerCenter.GUI
                 username = txtUsername.Text,
                 password = txtPassword.Text
             };
-           if(tk.KtraDangNhapHopLe(tk).HasRows)
+           if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
                 if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
                 {
                     MHNhanVienKhaoThi f = new MHNhanVienKhaoThi();
-                    f.Show();
+                  
                     this.Hide();
+                    f.Show();
+                    f.FormClosed += F_FormClosed;
+                }
+                if (tk.username.StartsWith("hv") || tk.username.StartsWith("HV") || tk.username.StartsWith("Hv"))
+                {
+                    StudentForm f = new StudentForm();
+                    
+                    this.Hide();
+                    f.Show();
+                    f.FormClosed += F_FormClosed;
+                }
+                if (tk.username.StartsWith("nvktoan") || tk.username.StartsWith("NVKTOAN") || tk.username.StartsWith("Nvktoan"))
+                {
+                    AccountantForm f = new AccountantForm();
+
+                    this.Hide();
+                    f.Show();
+                    f.FormClosed += F_FormClosed;
                 }
 
                 
@@ -63,6 +80,15 @@ namespace ComputerCenter.GUI
         {
             txtUsername.Text = "";
             txtPassword.Text = "";
+        }
+
+        private void F_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+            //Clear login data when show again
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+            cbbRole.SelectedIndex = -1;
         }
     }
 }

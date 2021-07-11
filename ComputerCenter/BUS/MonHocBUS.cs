@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 using ComputerCenter.DAO;
 
 namespace ComputerCenter.BUS
 {
-    class MonHocBUS
+    public class MonHocBUS
     {
-        public int Malop { get; set; }
-        public string Tenlop { get; set; }
-        public int Hocphi { get; set; }
-        public DateTime Ngaybatdau { get; set; }
-        public string Giohoc { get; set; }
-        public int Magv { get; set; }
+        public int MaLop { get; set; }
+        public string TenLop { get; set; }
+        public int HocPhi { get; set; }
+        public string NgayBatDau { get; set; }
+        public string GioHoc { get; set; }
+        public int MaGV { get; set; }
 
+        public static DataTable ChonLopHoc()
+        {
+            return MonHocDAO.ChonLopHoc();
+        }
         public MonHocBUS() { }
 
         public MonHocBUS(DataRow row)
@@ -28,9 +33,43 @@ namespace ComputerCenter.BUS
             this.Giohoc = row["GIOHOC"].ToString();
             this.Magv = (int)row["MAGV"];
         }
+        public static DataTable displayLHForm()
+        {
+            return MonHocDAO.displayLHForm();
+        }
 
+        public static int EditLopHoc(MonHocBUS LHBUS)
+        {
+            return MonHocDAO.EditLopHoc(LHBUS);
+        }
+
+        public static int DelLopHoc(int MaLop)
+        {
+
+            return MonHocDAO.DelLopHoc(MaLop);
+        }
         MonHocDAO mhDAO = new MonHocDAO();
 
+        public static DataTable SearchLopHoc(string TenLop)
+        {
+            return MonHocDAO.SearchLopHoc(TenLop);
+        }
+
+        public static DataTable cbbMaGVLHForm()
+        {
+            return MonHocDAO.cbbMaGVLHForm();
+        }
+
+        public static DataTable cbbMaNhomHPLHForm()
+        {
+            return MonHocDAO.cbbMaNhomHPLHForm();
+        }
+
+        public static int AddLopHoc(MonHocBUS TLHBUS)
+        {
+
+            return MonHocDAO.AddLopHoc(TLHBUS);
+        }
 
         public List<MonHocBUS> getLopHocByMaLop(int malop)
         {
