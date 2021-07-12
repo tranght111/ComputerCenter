@@ -94,3 +94,30 @@ C:\Users\PC\OneDrive\Tài liệu\GitHub\ComputerCenter\ComputerCenter\obj\Debu
 C:\Users\PC\OneDrive\Tài liệu\GitHub\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
 C:\Users\PC\OneDrive\Tài liệu\GitHub\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.exe
 C:\Users\PC\OneDrive\Tài liệu\GitHub\ComputerCenter\ComputerCenter\obj\Debug\ComputerCenter.pdb
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\bin\Debug\ComputerCenter.exe.config
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\bin\Debug\ComputerCenter.exe
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\bin\Debug\ComputerCenter.pdb
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.AccountantForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.EmployeeForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKyHoacDangNhap.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyKhoaHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangKy.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHDangNhap.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.MHLapDSHocVien.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHLapDSHVTotNghiep.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHThongTinLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhanVienKhaoThi.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyDiemThiKetThucHocPhan.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHQuanLyDiemThiTotNghiep.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHThemLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.StudentForm.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHNhapDiem.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHXemDanhSachHocVien.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.MHXemLopHoc.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.Properties.Resources.resources
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.exe
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.pdb

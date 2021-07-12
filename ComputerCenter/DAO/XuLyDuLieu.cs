@@ -10,7 +10,7 @@ namespace ComputerCenter.DAO
 {
     public class XuLyDuLieu
     {
-        protected static string path = @"Data Source=DESKTOP-UML28IP;Initial Catalog=QL_TT_TINHOC;Integrated Security=True";
+        protected static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
 
         private SqlConnection con = null;
 
@@ -45,9 +45,6 @@ namespace ComputerCenter.DAO
             return con;
         }
 
-
-        
-        //protected static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
         protected static DataTable LayDuLieu(string sql)
         {
             SqlConnection conn = new SqlConnection(path);
