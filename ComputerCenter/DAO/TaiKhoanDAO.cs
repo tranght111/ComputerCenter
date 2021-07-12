@@ -24,15 +24,6 @@ namespace ComputerCenter.DAO
             return rs;
         }
 
-        public string getRoleOfUser(string username)
-        {
-            string role = null;
-            string query = "exec proc_GetRoleOfUser " + username;
-
-            var data = LayDuLieu(query);
-            role = data.ToString();
-
-            return role;
-        }
+      
     }
 }

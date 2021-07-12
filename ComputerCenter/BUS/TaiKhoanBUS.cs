@@ -32,10 +32,6 @@ namespace ComputerCenter.BUS
             //f.Show();
         }
 
-        public string getRoleOfUser(string username)
-        {
-            TaiKhoanDAO tkd = new TaiKhoanDAO();
-            return tkd.getRoleOfUser(username);
-        }
+        
     }
 }

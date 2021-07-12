@@ -76,13 +76,7 @@ namespace ComputerCenter.GUI
                 MessageBox.Show("Login Failed!!! Check your username or password!!!", "Thông báo");
             }
 
-            if (tk.getRoleOfUser(tk.username) == "HocVien")
-            {
-                MHXemLopHoc f = new MHXemLopHoc();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
+            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
