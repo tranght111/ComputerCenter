@@ -91,11 +91,15 @@ namespace ComputerCenter.BUS
             return mhDAO.LayDSMHtheoMaKH_MaNhomHP(makh, manhom);
         }
 
+
         public static DataTable LayDSLopHocCuaGV(int maGV)
         {
             return MonHocBUS.LayDSLopHocCuaGV(maGV);
         }
 
-
+        public static DataTable LayDSLopHocCuaNhomHocPhan(int MaNhom)
+        {
+            return MonHocDAO.LayDSLopHocCuaNhomHocPhan(MaNhom);
+        }
     }
 }

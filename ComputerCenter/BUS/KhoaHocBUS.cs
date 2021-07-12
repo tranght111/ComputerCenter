@@ -92,6 +92,11 @@ namespace ComputerCenter.BUS
         {
             return KH.KtraSLHocVienDK(makh);
         }
+
+        public static DataTable LayDSHocVienCuaKhoaHoc(int MaKH)
+        {
+            return KhoaHocDAO.LayDSHocVienCuaKhoaHoc(MaKH);
+        }
     }
 }
 

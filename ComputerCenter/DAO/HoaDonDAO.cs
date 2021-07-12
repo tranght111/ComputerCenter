@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
 using ComputerCenter;
+using ComputerCenter.BUS;
+using System.Windows.Forms;
 
 namespace ComputerCenter.DAO
 {
@@ -66,5 +68,31 @@ namespace ComputerCenter.DAO
             return dt;
         }
 
+        public static void ThemHoaDon(HoaDonBUS hd)
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(path);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("THANHTOAN", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@TENHD", SqlDbType.Text).Value = hd.TenHoaDon;
+                cmd.Parameters.Add("@NGAYLAP", SqlDbType.DateTime).Value = hd.NgayLap;
+                cmd.Parameters.Add("@TONGTIEN", SqlDbType.Float).Value = hd.TongTien;
+                cmd.Parameters.Add("@MANVKT", SqlDbType.Int).Value = hd.MaNVKeToan;
+                cmd.Parameters.Add("@MAHV", SqlDbType.Int).Value = hd.MaHocVien;
+                cmd.Parameters.Add("@MAKH", SqlDbType.Int).Value = hd.MaKhoaHoc;
+                cmd.Parameters.Add("@MAPHIEUPK", SqlDbType.Int).Value = hd.MaPhieuPhucKhao;
+                cmd.Parameters.Add("@MAPHIEUTN", SqlDbType.Int).Value = hd.MaPhieuThiTN;
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                cmd.ExecuteNonQuery();
+                con.Close();
+                MessageBox.Show("No record added", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch
+            {
+                MessageBox.Show("Record was added", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

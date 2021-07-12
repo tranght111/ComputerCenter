@@ -50,10 +50,10 @@ namespace ComputerCenter.GUI
             // 
             // buttonAdd_DiemTN
             // 
-            this.buttonAdd_DiemTN.Location = new System.Drawing.Point(1016, 398);
-            this.buttonAdd_DiemTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAdd_DiemTN.Location = new System.Drawing.Point(762, 323);
+            this.buttonAdd_DiemTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonAdd_DiemTN.Name = "buttonAdd_DiemTN";
-            this.buttonAdd_DiemTN.Size = new System.Drawing.Size(117, 57);
+            this.buttonAdd_DiemTN.Size = new System.Drawing.Size(88, 46);
             this.buttonAdd_DiemTN.TabIndex = 101;
             this.buttonAdd_DiemTN.Text = "Nhập điểm";
             this.buttonAdd_DiemTN.UseVisualStyleBackColor = true;
@@ -61,37 +61,39 @@ namespace ComputerCenter.GUI
             // 
             // textBoxDiemTN
             // 
-            this.textBoxDiemTN.Location = new System.Drawing.Point(725, 85);
-            this.textBoxDiemTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxDiemTN.Location = new System.Drawing.Point(544, 69);
+            this.textBoxDiemTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxDiemTN.Multiline = true;
             this.textBoxDiemTN.Name = "textBoxDiemTN";
-            this.textBoxDiemTN.Size = new System.Drawing.Size(265, 22);
+            this.textBoxDiemTN.Size = new System.Drawing.Size(200, 19);
             this.textBoxDiemTN.TabIndex = 100;
             // 
             // comboBoxMaKH_TN
             // 
             this.comboBoxMaKH_TN.FormattingEnabled = true;
-            this.comboBoxMaKH_TN.Location = new System.Drawing.Point(197, 82);
-            this.comboBoxMaKH_TN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaKH_TN.Location = new System.Drawing.Point(173, 18);
+            this.comboBoxMaKH_TN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMaKH_TN.Name = "comboBoxMaKH_TN";
-            this.comboBoxMaKH_TN.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxMaKH_TN.Size = new System.Drawing.Size(200, 21);
             this.comboBoxMaKH_TN.TabIndex = 99;
+            this.comboBoxMaKH_TN.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaKH_TN_SelectedIndexChanged);
             // 
             // comboBoxMaHVTN
             // 
             this.comboBoxMaHVTN.FormattingEnabled = true;
-            this.comboBoxMaHVTN.Location = new System.Drawing.Point(197, 30);
-            this.comboBoxMaHVTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaHVTN.Location = new System.Drawing.Point(173, 69);
+            this.comboBoxMaHVTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMaHVTN.Name = "comboBoxMaHVTN";
-            this.comboBoxMaHVTN.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxMaHVTN.Size = new System.Drawing.Size(200, 21);
             this.comboBoxMaHVTN.TabIndex = 98;
+            this.comboBoxMaHVTN.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaHVTN_SelectedIndexChanged);
             // 
             // buttonSeeTNForm
             // 
-            this.buttonSeeTNForm.Location = new System.Drawing.Point(1016, 304);
-            this.buttonSeeTNForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSeeTNForm.Location = new System.Drawing.Point(762, 247);
+            this.buttonSeeTNForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSeeTNForm.Name = "buttonSeeTNForm";
-            this.buttonSeeTNForm.Size = new System.Drawing.Size(117, 57);
+            this.buttonSeeTNForm.Size = new System.Drawing.Size(88, 46);
             this.buttonSeeTNForm.TabIndex = 97;
             this.buttonSeeTNForm.Text = "Xem";
             this.buttonSeeTNForm.UseVisualStyleBackColor = true;
@@ -100,63 +102,68 @@ namespace ComputerCenter.GUI
             // comboBoxMaGV_TN
             // 
             this.comboBoxMaGV_TN.FormattingEnabled = true;
-            this.comboBoxMaGV_TN.Location = new System.Drawing.Point(197, 146);
-            this.comboBoxMaGV_TN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaGV_TN.Location = new System.Drawing.Point(544, 18);
+            this.comboBoxMaGV_TN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMaGV_TN.Name = "comboBoxMaGV_TN";
-            this.comboBoxMaGV_TN.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxMaGV_TN.Size = new System.Drawing.Size(200, 21);
             this.comboBoxMaGV_TN.TabIndex = 96;
             // 
             // labelDiemTN
             // 
             this.labelDiemTN.AutoSize = true;
-            this.labelDiemTN.Location = new System.Drawing.Point(504, 85);
+            this.labelDiemTN.Location = new System.Drawing.Point(436, 72);
+            this.labelDiemTN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDiemTN.Name = "labelDiemTN";
-            this.labelDiemTN.Size = new System.Drawing.Size(44, 17);
+            this.labelDiemTN.Size = new System.Drawing.Size(34, 13);
             this.labelDiemTN.TabIndex = 95;
             this.labelDiemTN.Text = "Điểm:";
             // 
             // labelMaPhieuDkiTN
             // 
             this.labelMaPhieuDkiTN.AutoSize = true;
-            this.labelMaPhieuDkiTN.Location = new System.Drawing.Point(504, 30);
+            this.labelMaPhieuDkiTN.Location = new System.Drawing.Point(7, 121);
+            this.labelMaPhieuDkiTN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaPhieuDkiTN.Name = "labelMaPhieuDkiTN";
-            this.labelMaPhieuDkiTN.Size = new System.Drawing.Size(187, 17);
+            this.labelMaPhieuDkiTN.Size = new System.Drawing.Size(145, 13);
             this.labelMaPhieuDkiTN.TabIndex = 93;
             this.labelMaPhieuDkiTN.Text = "Mã phiếu đăng kí tốt nghiệp:";
             // 
             // labeLMaGV_TN
             // 
             this.labeLMaGV_TN.AutoSize = true;
-            this.labeLMaGV_TN.Location = new System.Drawing.Point(53, 146);
+            this.labeLMaGV_TN.Location = new System.Drawing.Point(436, 18);
+            this.labeLMaGV_TN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labeLMaGV_TN.Name = "labeLMaGV_TN";
-            this.labeLMaGV_TN.Size = new System.Drawing.Size(55, 17);
+            this.labeLMaGV_TN.Size = new System.Drawing.Size(43, 13);
             this.labeLMaGV_TN.TabIndex = 92;
             this.labeLMaGV_TN.Text = "Mã GV:";
             // 
             // labelMaKH_TN
             // 
             this.labelMaKH_TN.AutoSize = true;
-            this.labelMaKH_TN.Location = new System.Drawing.Point(53, 82);
+            this.labelMaKH_TN.Location = new System.Drawing.Point(40, 18);
+            this.labelMaKH_TN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaKH_TN.Name = "labelMaKH_TN";
-            this.labelMaKH_TN.Size = new System.Drawing.Size(93, 17);
+            this.labelMaKH_TN.Size = new System.Drawing.Size(73, 13);
             this.labelMaKH_TN.TabIndex = 91;
             this.labelMaKH_TN.Text = "Mã khóa học:";
             // 
             // labelMaHVTN
             // 
             this.labelMaHVTN.AutoSize = true;
-            this.labelMaHVTN.Location = new System.Drawing.Point(53, 30);
+            this.labelMaHVTN.Location = new System.Drawing.Point(40, 69);
+            this.labelMaHVTN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMaHVTN.Name = "labelMaHVTN";
-            this.labelMaHVTN.Size = new System.Drawing.Size(88, 17);
+            this.labelMaHVTN.Size = new System.Drawing.Size(69, 13);
             this.labelMaHVTN.TabIndex = 90;
             this.labelMaHVTN.Text = "Mã học viên:";
             // 
             // buttonSearchTNForm
             // 
-            this.buttonSearchTNForm.Location = new System.Drawing.Point(1016, 601);
-            this.buttonSearchTNForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonSearchTNForm.Location = new System.Drawing.Point(762, 488);
+            this.buttonSearchTNForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonSearchTNForm.Name = "buttonSearchTNForm";
-            this.buttonSearchTNForm.Size = new System.Drawing.Size(117, 57);
+            this.buttonSearchTNForm.Size = new System.Drawing.Size(88, 46);
             this.buttonSearchTNForm.TabIndex = 88;
             this.buttonSearchTNForm.Text = "Tìm kiếm";
             this.buttonSearchTNForm.UseVisualStyleBackColor = true;
@@ -164,10 +171,10 @@ namespace ComputerCenter.GUI
             // 
             // buttonDeleteTNForm
             // 
-            this.buttonDeleteTNForm.Location = new System.Drawing.Point(1016, 500);
-            this.buttonDeleteTNForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonDeleteTNForm.Location = new System.Drawing.Point(762, 406);
+            this.buttonDeleteTNForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonDeleteTNForm.Name = "buttonDeleteTNForm";
-            this.buttonDeleteTNForm.Size = new System.Drawing.Size(117, 57);
+            this.buttonDeleteTNForm.Size = new System.Drawing.Size(88, 46);
             this.buttonDeleteTNForm.TabIndex = 87;
             this.buttonDeleteTNForm.Text = "Xóa";
             this.buttonDeleteTNForm.UseVisualStyleBackColor = true;
@@ -175,10 +182,10 @@ namespace ComputerCenter.GUI
             // 
             // buttonEditTNForm
             // 
-            this.buttonEditTNForm.Location = new System.Drawing.Point(1016, 202);
-            this.buttonEditTNForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonEditTNForm.Location = new System.Drawing.Point(762, 164);
+            this.buttonEditTNForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonEditTNForm.Name = "buttonEditTNForm";
-            this.buttonEditTNForm.Size = new System.Drawing.Size(117, 57);
+            this.buttonEditTNForm.Size = new System.Drawing.Size(88, 46);
             this.buttonEditTNForm.TabIndex = 86;
             this.buttonEditTNForm.Text = "Sửa";
             this.buttonEditTNForm.UseVisualStyleBackColor = true;
@@ -187,29 +194,29 @@ namespace ComputerCenter.GUI
             // dataGridViewTNForm
             // 
             this.dataGridViewTNForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewTNForm.Location = new System.Drawing.Point(56, 202);
-            this.dataGridViewTNForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridViewTNForm.Location = new System.Drawing.Point(42, 164);
+            this.dataGridViewTNForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewTNForm.Name = "dataGridViewTNForm";
             this.dataGridViewTNForm.RowHeadersWidth = 51;
             this.dataGridViewTNForm.RowTemplate.Height = 24;
-            this.dataGridViewTNForm.Size = new System.Drawing.Size(936, 551);
+            this.dataGridViewTNForm.Size = new System.Drawing.Size(702, 448);
             this.dataGridViewTNForm.TabIndex = 85;
             this.dataGridViewTNForm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewTNForm_CellClick);
             // 
             // comboBoxMaPhieuDkiTN
             // 
             this.comboBoxMaPhieuDkiTN.FormattingEnabled = true;
-            this.comboBoxMaPhieuDkiTN.Location = new System.Drawing.Point(725, 22);
-            this.comboBoxMaPhieuDkiTN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxMaPhieuDkiTN.Location = new System.Drawing.Point(173, 115);
+            this.comboBoxMaPhieuDkiTN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBoxMaPhieuDkiTN.Name = "comboBoxMaPhieuDkiTN";
-            this.comboBoxMaPhieuDkiTN.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxMaPhieuDkiTN.Size = new System.Drawing.Size(200, 21);
             this.comboBoxMaPhieuDkiTN.TabIndex = 102;
             // 
             // MHQuanLyDiemThiTotNghiep
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1187, 750);
+            this.ClientSize = new System.Drawing.Size(890, 609);
             this.Controls.Add(this.comboBoxMaPhieuDkiTN);
             this.Controls.Add(this.buttonAdd_DiemTN);
             this.Controls.Add(this.textBoxDiemTN);
@@ -226,10 +233,11 @@ namespace ComputerCenter.GUI
             this.Controls.Add(this.buttonDeleteTNForm);
             this.Controls.Add(this.buttonEditTNForm);
             this.Controls.Add(this.dataGridViewTNForm);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MHQuanLyDiemThiTotNghiep";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điểm thi tốt nghiệp";
+            this.Load += new System.EventHandler(this.MHQuanLyDiemThiTotNghiep_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTNForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

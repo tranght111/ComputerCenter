@@ -37,6 +37,9 @@
             this.btnXemDiemMonHoc = new System.Windows.Forms.Button();
             this.btnDKKH = new System.Windows.Forms.Button();
             this.btnDSHVTN = new System.Windows.Forms.Button();
+            this.buttonĐkPK = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,11 +164,62 @@
             this.btnDSHVTN.UseVisualStyleBackColor = false;
             this.btnDSHVTN.Click += new System.EventHandler(this.btnDSHVTN_Click);
             // 
+            // buttonĐkPK
+            // 
+            this.buttonĐkPK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.buttonĐkPK.FlatAppearance.BorderSize = 0;
+            this.buttonĐkPK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonĐkPK.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonĐkPK.ForeColor = System.Drawing.Color.White;
+            this.buttonĐkPK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonĐkPK.Location = new System.Drawing.Point(666, 206);
+            this.buttonĐkPK.Name = "buttonĐkPK";
+            this.buttonĐkPK.Size = new System.Drawing.Size(169, 42);
+            this.buttonĐkPK.TabIndex = 72;
+            this.buttonĐkPK.Text = "Đăng ký phúc khảo";
+            this.buttonĐkPK.UseVisualStyleBackColor = false;
+            this.buttonĐkPK.Click += new System.EventHandler(this.buttonĐkPK_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(593, 264);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(242, 42);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "Đăng ký thi Tốt nghiệp";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.btnDangXuat.FlatAppearance.BorderSize = 0;
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.ForeColor = System.Drawing.Color.White;
+            this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangXuat.Location = new System.Drawing.Point(719, 428);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(169, 42);
+            this.btnDangXuat.TabIndex = 74;
+            this.btnDangXuat.Text = "Đăng xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
             // StudentForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(889, 472);
+            this.Controls.Add(this.btnDangXuat);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonĐkPK);
             this.Controls.Add(this.btnDSHVTN);
             this.Controls.Add(this.btnDKKH);
             this.Controls.Add(this.btnXemLichThiTN);
@@ -196,5 +250,8 @@
         private System.Windows.Forms.Button btnXemDiemMonHoc;
         private System.Windows.Forms.Button btnDKKH;
         private System.Windows.Forms.Button btnDSHVTN;
+        private System.Windows.Forms.Button buttonĐkPK;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }

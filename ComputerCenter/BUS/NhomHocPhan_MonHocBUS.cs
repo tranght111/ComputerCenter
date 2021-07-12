@@ -29,7 +29,12 @@ namespace ComputerCenter.BUS
 
         public static DataTable cbbMaLopKTHPForm()
         {
-            return NhomHocPhan_MonHocDAO.LayDSNhomHocPhan_MonHoc();
+            return NhomHocPhan_MonHocDAO.LayDSNhomHocPhan_MonHocCuaLopKTVVaChungChi();
+        }
+
+        public static DataTable LayDSHocVienCuaMonHoc(int MaNhom)
+        {
+            return NhomHocPhan_MonHocDAO.LayDSHocVienCuaMonHoc(MaNhom);
         }
     }
 }

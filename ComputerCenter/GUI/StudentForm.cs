@@ -62,5 +62,22 @@ namespace ComputerCenter.GUI
             this.Hide();
             f.ShowDialog();
         }
+
+        private void buttonĐkPK_Click(object sender, EventArgs e)
+        {
+            MHDangKyPhucKhao pkh = new MHDangKyPhucKhao();
+            pkh.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MHDangKyThiTN tn = new MHDangKyThiTN();
+            tn.ShowDialog();
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

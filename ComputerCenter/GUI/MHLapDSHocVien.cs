@@ -16,7 +16,7 @@ namespace ComputerCenter
     {
         DiemThiBUS DT = new DiemThiBUS();
         KhoaHocBUS KH = new KhoaHocBUS();
-        HocPhanBUS HP = new HocPhanBUS();
+        NhomHocPhanBUS HP = new NhomHocPhanBUS();
         public MHLapDSHocVien()
         {
             InitializeComponent();
@@ -74,7 +74,7 @@ namespace ComputerCenter
         {
             KH.MaKH = int.Parse(cbbKhoaHoc.Text);         
 
-            var tableHocPhan = HocPhanBUS.LayDSNhomHocPhan(KH.MaKH);
+            var tableHocPhan = NhomHocPhanBUS.LayDSNhomHocPhan(KH.MaKH);
 
             cbbHocPhan.ValueMember = "MANHOM";
             cbbHocPhan.DataSource = tableHocPhan;
@@ -84,10 +84,10 @@ namespace ComputerCenter
 
         private void cbbHocPhan_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
+            HP.Manhom = int.Parse(cbbHocPhan.Text);
             KH.MaKH = int.Parse(cbbKhoaHoc.Text);
 
-            var tableMonHoc = DiemThiBUS.LayDSMonHoc(KH.MaKH, HP.MaHocPhan);
+            var tableMonHoc = DiemThiBUS.LayDSMonHoc(KH.MaKH, HP.Manhom);
 
             cbbMonHoc.ValueMember = "MALOP";
             cbbMonHoc.DataSource = tableMonHoc;
@@ -97,10 +97,10 @@ namespace ComputerCenter
 
         private void cbbMonHoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            HP.MaHocPhan = int.Parse(cbbHocPhan.Text);
+            HP.Manhom = int.Parse(cbbHocPhan.Text);
             DT.MaLop = int.Parse(cbbMonHoc.Text);
 
-            var tableLanThi = DiemThiBUS.LayDSLanThiCuaMonHoc(HP.MaHocPhan, DT.MaLop);
+            var tableLanThi = DiemThiBUS.LayDSLanThiCuaMonHoc(HP.Manhom, DT.MaLop);
 
             cbbLanThi.ValueMember = "LANTHI";
             cbbLanThi.DataSource = tableLanThi;

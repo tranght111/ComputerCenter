@@ -19,9 +19,9 @@ namespace ComputerCenter.GUI
         {
             InitializeComponent();
 
-            cbbMaHVKTHP();
-            cbbMaLopKTHP();
-            cbbMaNhomHPKTHP();
+            //cbbMaHVKTHP();
+            //cbbMaLopKTHP();
+            //cbbMaNhomHPKTHP();
         }
 
         private void buttonExitKTHPForm_Click(object sender, EventArgs e)
@@ -73,14 +73,14 @@ namespace ComputerCenter.GUI
         //    cbbMaNhomHPKTHP();
         //}
 
-        private void cbbMaNhomHPKTHP()
+        /*private void cbbMaNhomHPKTHP()
         {
             var tb = NhomHocPhan_MonHocBUS.cbbMaLopKTHPForm();
 
             comboBoxMaNhomHPKTHPForm.ValueMember = "MALOP";
             comboBoxMaNhomHPKTHPForm.DataSource = tb;
             comboBoxMaNhomHPKTHPForm.DisplayMember = "MANHOM";
-        }
+        }*/
 
         private void buttonAdd_DiemKTHP_Click(object sender, EventArgs e)
         {
@@ -173,6 +173,35 @@ namespace ComputerCenter.GUI
             comboBoxMaNhomHPKTHPForm.Text = dataGridViewKTHPForm.Rows[e.RowIndex].Cells[2].Value.ToString();
             textBoxLanThiKTHP.Text = dataGridViewKTHPForm.Rows[e.RowIndex].Cells[3].Value.ToString();
             textBoxDiemKTHP.Text = dataGridViewKTHPForm.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+
+        private void comboBoxMaNhomHPKTHPForm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //int temp = int.Parse(comboBoxMaNhomHPKTHPForm.Text);
+            var tableHocPhan = MonHocBUS.LayDSLopHocCuaNhomHocPhan(int.Parse(comboBoxMaNhomHPKTHPForm.Text));
+
+            comboBoxMaLopKTHP.ValueMember = "MALOP";
+            comboBoxMaLopKTHP.DataSource = tableHocPhan;
+            comboBoxMaLopKTHP.DisplayMember = "MALOP";
+        }
+
+        private void MHQuanLyDiemThiKetThucHocPhan_Load(object sender, EventArgs e)
+        {
+            //lay ds nhom hoc phan cua lop ki thuat vien va chung chi
+            var tableHocPhan = NhomHocPhan_MonHocBUS.cbbMaLopKTHPForm();
+
+            comboBoxMaNhomHPKTHPForm.ValueMember = "MANHOM";
+            comboBoxMaNhomHPKTHPForm.DataSource = tableHocPhan;
+            comboBoxMaNhomHPKTHPForm.DisplayMember = "MANHOM";
+        }
+
+        private void comboBoxMaLopKTHP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var tableHocVien = NhomHocPhan_MonHocBUS.LayDSHocVienCuaMonHoc(int.Parse(comboBoxMaNhomHPKTHPForm.Text));
+
+            comboBoxMaHVKTHP.ValueMember = "MAHOCVIEN";
+            comboBoxMaHVKTHP.DataSource = tableHocVien;
+            comboBoxMaHVKTHP.DisplayMember = "MAHOCVIEN";
         }
     }
 }

@@ -43,5 +43,39 @@ namespace ComputerCenter.GUI
             int MaHocVien = Convert.ToInt32(txtMaHocVien.Text);
             dgvAccountant.DataSource = HoaDonBUS.TimTheoMaHocVien(MaHocVien);
         }
+
+        HoaDonBUS hdo = new HoaDonBUS();
+        private void buttonThemHD_Click(object sender, EventArgs e)
+        {
+            hdo.NgayLap = dtpNgayLap.Value;
+            hdo.MaKhoaHoc = Convert.ToInt32(textMaNVKToan.Text);
+            hdo.TongTien = Convert.ToInt32(textTongTien.Text);
+            hdo.MaHocVien = Convert.ToInt32(textMaHV.Text);
+            hdo.TenHoaDon = textTenHD.Text;
+
+            if (string.IsNullOrEmpty(textMaKH.Text))
+            {
+                hdo.MaKhoaHoc = 0;
+            }
+            else
+                hdo.MaKhoaHoc = Convert.ToInt32(textMaKH.Text);
+
+            if (string.IsNullOrEmpty(textMaPhieuPK.Text))
+                hdo.MaPhieuPhucKhao = 0;
+            else
+                hdo.MaPhieuPhucKhao = Convert.ToInt32(textMaPhieuPK.Text);
+
+            if (string.IsNullOrEmpty(textMaPhieuTN.Text))
+                hdo.MaPhieuThiTN = 0;
+            else
+                hdo.MaPhieuThiTN = Convert.ToInt32(textMaPhieuTN.Text);
+            HoaDonBUS.ThemHoaDon(hdo);
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            TaiKhoanBUS.DangXuat();
+            this.Close();
+        }
     }
 }

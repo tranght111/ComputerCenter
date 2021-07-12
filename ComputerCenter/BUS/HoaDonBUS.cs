@@ -41,5 +41,9 @@ namespace ComputerCenter.BUS
         {
             return HoaDonDAO.TimTheoMaHocVien(MaHocVien);
         }
+        public static void ThemHoaDon(HoaDonBUS hd)
+        {
+            HoaDonDAO.ThemHoaDon(hd);
+        }
     }
 }

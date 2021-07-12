@@ -52,27 +52,28 @@
     <Compile Include="BUS\DiemThiKTHPBUS.cs" />
     <Compile Include="BUS\DiemThiTotNghiepBUS.cs" />
     <Compile Include="BUS\HoaDonBUS.cs" />
-    <Compile Include="BUS\HocPhanBUS.cs" />
     <Compile Include="BUS\HocVienBUS.cs" />
     <Compile Include="BUS\LichThiBUS.cs" />
     <Compile Include="BUS\LoaiKhoaHocBUS.cs" />
     <Compile Include="BUS\MonHocBUS.cs" />
     <Compile Include="BUS\NhomHocPhanBUS.cs" />
     <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
+    <Compile Include="BUS\PhieuDKThiTNBUS.cs" />
+    <Compile Include="BUS\PhieuPhucKhaoBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
     <Compile Include="DAO\DiemThiKTHPDAO.cs" />
     <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
-    <Compile Include="DAO\HocPhanDAO.cs" />
     <Compile Include="DAO\HocVienDAO.cs" />
     <Compile Include="DAO\KhoaHocDAO.cs" />
     <Compile Include="DAO\LichThiDAO.cs" />
     <Compile Include="DAO\LoaiKhoaHoc.cs" />
     <Compile Include="DAO\MonHocDAO.cs" />
-    <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\NhomHocPhanDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
+    <Compile Include="DAO\PhieuDKThiTNDAO.cs" />
+    <Compile Include="DAO\PhieuPhucKhaoDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLyDuLieu.cs" />
     <Compile Include="BUS\KhoaHocBUS.cs" />
@@ -93,6 +94,18 @@
     </Compile>
     <Compile Include="GUI\MHDangKyHoacDangNhap.Designer.cs">
       <DependentUpon>MHDangKyHoacDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHDangKyPhucKhao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHDangKyPhucKhao.designer.cs">
+      <DependentUpon>MHDangKyPhucKhao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHDangKyThiTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHDangKyThiTN.designer.cs">
+      <DependentUpon>MHDangKyThiTN.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MHQuanLyKhoaHoc.cs">
       <SubType>Form</SubType>

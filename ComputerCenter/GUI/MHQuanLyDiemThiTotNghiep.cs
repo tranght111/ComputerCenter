@@ -18,10 +18,10 @@ namespace ComputerCenter.GUI
         public MHQuanLyDiemThiTotNghiep()
         {
             InitializeComponent();
-            cbbMaHV_TN();
-            cbbMaKH_TN();
-            cbbMaGV_TN();
-            cbbMaPhieuDki_TN();
+            //cbbMaHV_TN();
+            //cbbMaKH_TN();
+            //cbbMaGV_TN();
+            //cbbMaPhieuDki_TN();
         }
 
         private void dataGridViewTNForm_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -45,21 +45,21 @@ namespace ComputerCenter.GUI
         //    cbbMaHV_TN();
         //}
 
-        private void cbbMaHV_TN()
+        /*private void cbbMaHV_TN()
         {
             var tb = DiemThiTotNghiepBUS.cbbMaHVTN();
 
             comboBoxMaHVTN.ValueMember = "MAKHOAHOC";
             comboBoxMaHVTN.DataSource = tb;
             comboBoxMaHVTN.DisplayMember = "MAHOCVIEN";
-        }
+        }*/
 
         //private void comboBoxMaKH_TN_SelectedIndexChanged(object sender, EventArgs e)
         //{
         //    cbbMaKH_TN();
         //}
 
-        private void cbbMaKH_TN()
+        /*private void cbbMaKH_TN()
         {
             var tb = DiemThiTotNghiepBUS.cbbMaKHTN();
 
@@ -67,7 +67,7 @@ namespace ComputerCenter.GUI
             comboBoxMaKH_TN.DataSource = tb;
             comboBoxMaKH_TN.DisplayMember = "MAKHOAHOC";
         }
-
+        */
         //private void comboBoxMaGV_TN_SelectedIndexChanged(object sender, EventArgs e)
         //{
         //    cbbMaGV_TN();
@@ -87,14 +87,14 @@ namespace ComputerCenter.GUI
         //    cbbMaPhieuDki_TN();
         //}
 
-        private void cbbMaPhieuDki_TN()
+        /*private void cbbMaPhieuDki_TN()
         {
             var tb = DiemThiTotNghiepBUS.cbbMaPhieu_DkiTN();
 
             comboBoxMaPhieuDkiTN.ValueMember = "NGAYLAPPHIEU";
             comboBoxMaPhieuDkiTN.DataSource = tb;
             comboBoxMaPhieuDkiTN.DisplayMember = "MAPHIEU";
-        }
+        }*/
 
         public void clearDiemTNForm()
         {
@@ -199,6 +199,39 @@ namespace ComputerCenter.GUI
            //TypeDiem tDiem = new TypeDiem();
             //this.Hide();
             //tDiem.Show();
-        }  
+        }
+
+        private void MHQuanLyDiemThiTotNghiep_Load(object sender, EventArgs e)
+        {
+            //lay ds khoahoc KTV
+            var table = KhoaHocBUS.LayDSKhoaHocKTV();
+
+            comboBoxMaKH_TN.ValueMember = "MAKHOAHOC";
+            comboBoxMaKH_TN.DataSource = table;
+            comboBoxMaKH_TN.DisplayMember = "MAKHOAHOC";
+
+            //lay ds Giaovien
+            cbbMaGV_TN();
+        }
+
+        private void comboBoxMaKH_TN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show((comboBoxMaKH_TN.Text));
+
+            var table = KhoaHocBUS.LayDSHocVienCuaKhoaHoc(int.Parse(comboBoxMaKH_TN.Text));
+
+            comboBoxMaHVTN.ValueMember = "MAHOCVIEN";
+            comboBoxMaHVTN.DataSource = table;
+            comboBoxMaHVTN.DisplayMember = "MAHOCVIEN";
+        }
+
+        private void comboBoxMaHVTN_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var table = PhieuDKThiTNBUS.LayDSPhieuDangKyTNCuaHocVien(int.Parse(comboBoxMaHVTN.Text));
+
+            comboBoxMaPhieuDkiTN.ValueMember = "MAPHIEU";
+            comboBoxMaPhieuDkiTN.DataSource = table;
+            comboBoxMaPhieuDkiTN.DisplayMember = "MAPHIEU";
+        }
     }
 }

@@ -11,9 +11,6 @@ namespace ComputerCenter.DAO
 {
     class KhoaHocDAO: XuLyDuLieu
     {
-       //Phát thay đường dẫn vô đây nữa nè 
-       // Trang them cho dang nhap nv ke toan cho tui thu lun
-        //static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
 
         public static DataTable LayDSKhoaHoc()
         {
@@ -158,6 +155,22 @@ namespace ComputerCenter.DAO
             if (sldk < max)
                 return true;
             return false;
+        }
+
+        public static DataTable LayDSHocVienCuaKhoaHoc(int MaKH)
+        {
+            SqlConnection con = new SqlConnection(path);
+            con = new SqlConnection(path);
+            string query = string.Format("SELECT MAHOCVIEN FROM DANGKYKHOAHOC WHERE MAKHOAHOC = {0}", MaKH);
+            //var cmd = new SqlCommand(query);
+            SqlDataAdapter da = new SqlDataAdapter(query, con);
+
+            var table = new DataTable();
+            da.Fill(table);
+            da.Dispose();
+
+            return table;
+
         }
     }
 }

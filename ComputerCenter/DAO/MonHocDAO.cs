@@ -184,5 +184,17 @@ namespace ComputerCenter.DAO
 
             return maGV;
         }
+
+        public static DataTable LayDSLopHocCuaNhomHocPhan(int MaNhom)
+        {
+            SqlConnection conn = new SqlConnection(path);
+            var cmd = string.Format("SELECT MALOP FROM NHOMHOCPHAN_MONHOC WHERE MANHOM = {0}", MaNhom);
+            var dr = new SqlDataAdapter(cmd, conn);
+            var tableMonHoc = new DataTable();
+            dr.Fill(tableMonHoc);
+            dr.Dispose();
+
+            return tableMonHoc;
+        }
     }
 }
