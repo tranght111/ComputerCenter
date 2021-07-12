@@ -41,7 +41,7 @@ namespace ComputerCenter.GUI
 
            if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
-                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
+                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NTTN"))
                 {
                     MHNhanVienKhaoThi f = new MHNhanVienKhaoThi();
                   

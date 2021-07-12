@@ -59,7 +59,6 @@
     <Compile Include="BUS\MonHocBUS.cs" />
     <Compile Include="BUS\NhomHocPhanBUS.cs" />
     <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
-    <Compile Include="BUS\PhieuDKThiTNBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
     <Compile Include="DAO\DiemThiKTHPDAO.cs" />
@@ -72,7 +71,6 @@
     <Compile Include="DAO\LoaiKhoaHoc.cs" />
     <Compile Include="DAO\MonHocDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
-    <Compile Include="DAO\PhieuDKThiTNDAO.cs" />
     <Compile Include="DAO\NhomHocPhanDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
@@ -131,12 +129,6 @@
     </Compile>
     <Compile Include="GUI\MHLapDSHVTotNghiep.Designer.cs">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MHLapPhieuDKiTN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\MHLapPhieuDKiTN.designer.cs">
-      <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MHThongTinLopHoc.cs">
       <SubType>Form</SubType>
@@ -220,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHLapDSHVTotNghiep.resx">
       <DependentUpon>MHLapDSHVTotNghiep.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\MHLapPhieuDKiTN.resx">
-      <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHThongTinLopHoc.resx">
       <DependentUpon>MHThongTinLopHoc.cs</DependentUpon>

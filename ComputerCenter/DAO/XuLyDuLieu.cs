@@ -10,7 +10,7 @@ namespace ComputerCenter.DAO
 {
     public class XuLyDuLieu
     {
-        protected static string path = "Data Source=.\\MSSQLSERVER01;Initial Catalog=QL_TT_TINHOC;Integrated Security=True";
+        protected static string path = @"Data Source=DESKTOP-UML28IP;Initial Catalog=QL_TT_TINHOC;Integrated Security=True";
 
         private SqlConnection con = null;
 

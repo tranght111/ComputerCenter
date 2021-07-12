@@ -40,10 +40,10 @@ namespace ComputerCenter.GUI
             //textBoxNgayLap.Text = dataGridViewTNForm.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
-        private void comboBoxMaHVTN_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-            cbbMaHV_TN();
-        }
+        //private void comboBoxMaHVTN_SelectedIndexChanged(object sender, EventArgs e)
+        //{ 
+        //    cbbMaHV_TN();
+        //}
 
         private void cbbMaHV_TN()
         {
@@ -54,10 +54,10 @@ namespace ComputerCenter.GUI
             comboBoxMaHVTN.DisplayMember = "MAHOCVIEN";
         }
 
-        private void comboBoxMaKH_TN_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaKH_TN();
-        }
+        //private void comboBoxMaKH_TN_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaKH_TN();
+        //}
 
         private void cbbMaKH_TN()
         {
@@ -68,10 +68,10 @@ namespace ComputerCenter.GUI
             comboBoxMaKH_TN.DisplayMember = "MAKHOAHOC";
         }
 
-        private void comboBoxMaGV_TN_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaGV_TN();
-        }
+        //private void comboBoxMaGV_TN_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaGV_TN();
+        //}
 
         private void cbbMaGV_TN()
         {
@@ -82,10 +82,10 @@ namespace ComputerCenter.GUI
             comboBoxMaGV_TN.DisplayMember = "MAGV";
         }
 
-        private void comboBoxMaPhieuDkiTN_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaPhieuDki_TN();
-        }
+        //private void comboBoxMaPhieuDkiTN_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaPhieuDki_TN();
+        //}
 
         private void cbbMaPhieuDki_TN()
         {

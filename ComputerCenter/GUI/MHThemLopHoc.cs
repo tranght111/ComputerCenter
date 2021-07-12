@@ -89,10 +89,10 @@ namespace ComputerCenter.GUI
             LH.Show();
         }
 
-        private void comboBoxMaGV_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbGV();
-        }
+        //private void comboBoxMaGV_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbGV();
+        //}
 
         private void cbbGV()
         {

@@ -48,115 +48,109 @@ namespace ComputerCenter.GUI
             // 
             // textBoxTimeBeginLop
             // 
-            this.textBoxTimeBeginLop.Location = new System.Drawing.Point(143, 154);
-            this.textBoxTimeBeginLop.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTimeBeginLop.Location = new System.Drawing.Point(191, 190);
+            this.textBoxTimeBeginLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTimeBeginLop.Multiline = true;
             this.textBoxTimeBeginLop.Name = "textBoxTimeBeginLop";
-            this.textBoxTimeBeginLop.Size = new System.Drawing.Size(200, 19);
+            this.textBoxTimeBeginLop.Size = new System.Drawing.Size(265, 22);
             this.textBoxTimeBeginLop.TabIndex = 40;
             // 
             // labelMaGV
             // 
             this.labelMaGV.AutoSize = true;
-            this.labelMaGV.Location = new System.Drawing.Point(35, 257);
-            this.labelMaGV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMaGV.Location = new System.Drawing.Point(47, 316);
             this.labelMaGV.Name = "labelMaGV";
-            this.labelMaGV.Size = new System.Drawing.Size(43, 13);
+            this.labelMaGV.Size = new System.Drawing.Size(55, 17);
             this.labelMaGV.TabIndex = 39;
             this.labelMaGV.Text = "Mã GV:";
             // 
             // textBoxGioHoc
             // 
-            this.textBoxGioHoc.Location = new System.Drawing.Point(143, 205);
-            this.textBoxGioHoc.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxGioHoc.Location = new System.Drawing.Point(191, 252);
+            this.textBoxGioHoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxGioHoc.Multiline = true;
             this.textBoxGioHoc.Name = "textBoxGioHoc";
-            this.textBoxGioHoc.Size = new System.Drawing.Size(200, 19);
+            this.textBoxGioHoc.Size = new System.Drawing.Size(265, 22);
             this.textBoxGioHoc.TabIndex = 37;
             // 
             // labelGioHoc
             // 
             this.labelGioHoc.AutoSize = true;
-            this.labelGioHoc.Location = new System.Drawing.Point(34, 207);
-            this.labelGioHoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelGioHoc.Location = new System.Drawing.Point(45, 255);
             this.labelGioHoc.Name = "labelGioHoc";
-            this.labelGioHoc.Size = new System.Drawing.Size(47, 13);
+            this.labelGioHoc.Size = new System.Drawing.Size(61, 17);
             this.labelGioHoc.TabIndex = 36;
             this.labelGioHoc.Text = "Giờ học:";
             // 
             // labelTimeBeginLop
             // 
             this.labelTimeBeginLop.AutoSize = true;
-            this.labelTimeBeginLop.Location = new System.Drawing.Point(34, 154);
-            this.labelTimeBeginLop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTimeBeginLop.Location = new System.Drawing.Point(45, 190);
             this.labelTimeBeginLop.Name = "labelTimeBeginLop";
-            this.labelTimeBeginLop.Size = new System.Drawing.Size(91, 13);
+            this.labelTimeBeginLop.Size = new System.Drawing.Size(119, 17);
             this.labelTimeBeginLop.TabIndex = 33;
             this.labelTimeBeginLop.Text = "Thời gian bắt đầu";
             // 
             // textBoxHocPhiLop
             // 
-            this.textBoxHocPhiLop.Location = new System.Drawing.Point(143, 106);
-            this.textBoxHocPhiLop.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxHocPhiLop.Location = new System.Drawing.Point(191, 130);
+            this.textBoxHocPhiLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxHocPhiLop.Multiline = true;
             this.textBoxHocPhiLop.Name = "textBoxHocPhiLop";
-            this.textBoxHocPhiLop.Size = new System.Drawing.Size(200, 19);
+            this.textBoxHocPhiLop.Size = new System.Drawing.Size(265, 22);
             this.textBoxHocPhiLop.TabIndex = 32;
             // 
             // labelHocPhiLop
             // 
             this.labelHocPhiLop.AutoSize = true;
-            this.labelHocPhiLop.Location = new System.Drawing.Point(34, 106);
-            this.labelHocPhiLop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHocPhiLop.Location = new System.Drawing.Point(45, 130);
             this.labelHocPhiLop.Name = "labelHocPhiLop";
-            this.labelHocPhiLop.Size = new System.Drawing.Size(46, 13);
+            this.labelHocPhiLop.Size = new System.Drawing.Size(56, 17);
             this.labelHocPhiLop.TabIndex = 31;
             this.labelHocPhiLop.Text = "Học phí";
             // 
             // textBoxTenLop
             // 
-            this.textBoxTenLop.Location = new System.Drawing.Point(143, 59);
-            this.textBoxTenLop.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxTenLop.Location = new System.Drawing.Point(191, 73);
+            this.textBoxTenLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxTenLop.Multiline = true;
             this.textBoxTenLop.Name = "textBoxTenLop";
-            this.textBoxTenLop.Size = new System.Drawing.Size(200, 19);
+            this.textBoxTenLop.Size = new System.Drawing.Size(265, 22);
             this.textBoxTenLop.TabIndex = 30;
             // 
             // labelTenLop
             // 
             this.labelTenLop.AutoSize = true;
-            this.labelTenLop.Location = new System.Drawing.Point(34, 59);
-            this.labelTenLop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTenLop.Location = new System.Drawing.Point(45, 73);
             this.labelTenLop.Name = "labelTenLop";
-            this.labelTenLop.Size = new System.Drawing.Size(46, 13);
+            this.labelTenLop.Size = new System.Drawing.Size(60, 17);
             this.labelTenLop.TabIndex = 29;
             this.labelTenLop.Text = "Tên lớp:";
             // 
             // textBoxMaLop
             // 
-            this.textBoxMaLop.Location = new System.Drawing.Point(143, 16);
-            this.textBoxMaLop.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxMaLop.Location = new System.Drawing.Point(191, 20);
+            this.textBoxMaLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxMaLop.Multiline = true;
             this.textBoxMaLop.Name = "textBoxMaLop";
-            this.textBoxMaLop.Size = new System.Drawing.Size(200, 19);
+            this.textBoxMaLop.Size = new System.Drawing.Size(265, 22);
             this.textBoxMaLop.TabIndex = 28;
             // 
             // labelMaLop
             // 
             this.labelMaLop.AutoSize = true;
-            this.labelMaLop.Location = new System.Drawing.Point(34, 16);
-            this.labelMaLop.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelMaLop.Location = new System.Drawing.Point(45, 20);
             this.labelMaLop.Name = "labelMaLop";
-            this.labelMaLop.Size = new System.Drawing.Size(42, 13);
+            this.labelMaLop.Size = new System.Drawing.Size(54, 17);
             this.labelMaLop.TabIndex = 27;
             this.labelMaLop.Text = "Mã lớp:";
             // 
             // buttonAddLop
             // 
-            this.buttonAddLop.Location = new System.Drawing.Point(28, 324);
-            this.buttonAddLop.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonAddLop.Location = new System.Drawing.Point(37, 399);
+            this.buttonAddLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonAddLop.Name = "buttonAddLop";
-            this.buttonAddLop.Size = new System.Drawing.Size(88, 46);
+            this.buttonAddLop.Size = new System.Drawing.Size(117, 57);
             this.buttonAddLop.TabIndex = 23;
             this.buttonAddLop.Text = "Thêm";
             this.buttonAddLop.UseVisualStyleBackColor = true;
@@ -164,10 +158,10 @@ namespace ComputerCenter.GUI
             // 
             // buttonXemDSLH
             // 
-            this.buttonXemDSLH.Location = new System.Drawing.Point(255, 324);
-            this.buttonXemDSLH.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonXemDSLH.Location = new System.Drawing.Point(340, 399);
+            this.buttonXemDSLH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonXemDSLH.Name = "buttonXemDSLH";
-            this.buttonXemDSLH.Size = new System.Drawing.Size(88, 46);
+            this.buttonXemDSLH.Size = new System.Drawing.Size(117, 57);
             this.buttonXemDSLH.TabIndex = 44;
             this.buttonXemDSLH.Text = "Xem danh sách lớp học";
             this.buttonXemDSLH.UseVisualStyleBackColor = true;
@@ -176,19 +170,18 @@ namespace ComputerCenter.GUI
             // comboBoxMaGV
             // 
             this.comboBoxMaGV.FormattingEnabled = true;
-            this.comboBoxMaGV.Location = new System.Drawing.Point(143, 251);
-            this.comboBoxMaGV.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxMaGV.Location = new System.Drawing.Point(191, 309);
+            this.comboBoxMaGV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxMaGV.Name = "comboBoxMaGV";
-            this.comboBoxMaGV.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxMaGV.Size = new System.Drawing.Size(265, 24);
             this.comboBoxMaGV.TabIndex = 45;
-            this.comboBoxMaGV.SelectedIndexChanged += new System.EventHandler(this.comboBoxMaGV_SelectedIndexChanged);
             // 
             // buttonExitLop
             // 
-            this.buttonExitLop.Location = new System.Drawing.Point(143, 324);
-            this.buttonExitLop.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonExitLop.Location = new System.Drawing.Point(191, 399);
+            this.buttonExitLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonExitLop.Name = "buttonExitLop";
-            this.buttonExitLop.Size = new System.Drawing.Size(88, 46);
+            this.buttonExitLop.Size = new System.Drawing.Size(117, 57);
             this.buttonExitLop.TabIndex = 42;
             this.buttonExitLop.Text = "Thoát";
             this.buttonExitLop.UseVisualStyleBackColor = true;
@@ -196,9 +189,9 @@ namespace ComputerCenter.GUI
             // 
             // MHThemLopHoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(368, 389);
+            this.ClientSize = new System.Drawing.Size(491, 479);
             this.Controls.Add(this.comboBoxMaGV);
             this.Controls.Add(this.buttonXemDSLH);
             this.Controls.Add(this.buttonExitLop);
@@ -214,7 +207,7 @@ namespace ComputerCenter.GUI
             this.Controls.Add(this.textBoxMaLop);
             this.Controls.Add(this.labelMaLop);
             this.Controls.Add(this.buttonAddLop);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MHThemLopHoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm_lớp_học";
