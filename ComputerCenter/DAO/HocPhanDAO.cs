@@ -10,7 +10,7 @@ namespace ComputerCenter.DAO
 {
     public class HocPhanDAO
     {
-        static string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
+        static string path = @"Data Source=DESKTOP-UML28IP;Initial Catalog=ComputerCentre;Integrated Security=True";
         public static DataTable LayDSNhomHocPhan(int MaKhoaHoc)
         {
             SqlConnection conn = new SqlConnection(path);

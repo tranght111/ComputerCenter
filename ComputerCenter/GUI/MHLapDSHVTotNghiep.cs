@@ -38,5 +38,10 @@ namespace ComputerCenter.GUI
 
             dgvDSHVTotNghiep.DataSource = table;
         }
+
+        private void cbbKhoaHocKTV_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

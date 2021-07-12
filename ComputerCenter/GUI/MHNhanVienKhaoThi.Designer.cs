@@ -34,7 +34,6 @@
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnLichThi = new System.Windows.Forms.Button();
-            this.btnLapPhieuDKthiTn = new System.Windows.Forms.Button();
             this.btnXemKhoaHoc = new System.Windows.Forms.Button();
             this.btnNhapDiemThi = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -106,26 +105,12 @@
             this.btnLichThi.UseVisualStyleBackColor = false;
             this.btnLichThi.Click += new System.EventHandler(this.btnLichThi_Click);
             // 
-            // btnLapPhieuDKthiTn
-            // 
-            this.btnLapPhieuDKthiTn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
-            this.btnLapPhieuDKthiTn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLapPhieuDKthiTn.ForeColor = System.Drawing.Color.White;
-            this.btnLapPhieuDKthiTn.Location = new System.Drawing.Point(59, 213);
-            this.btnLapPhieuDKthiTn.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.btnLapPhieuDKthiTn.Name = "btnLapPhieuDKthiTn";
-            this.btnLapPhieuDKthiTn.Size = new System.Drawing.Size(258, 82);
-            this.btnLapPhieuDKthiTn.TabIndex = 23;
-            this.btnLapPhieuDKthiTn.Text = "Lập Phiếu Đăng Ký Thi TN";
-            this.btnLapPhieuDKthiTn.UseVisualStyleBackColor = false;
-            this.btnLapPhieuDKthiTn.Click += new System.EventHandler(this.btnLapPhieuDKthiTn_Click);
-            // 
             // btnXemKhoaHoc
             // 
             this.btnXemKhoaHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.btnXemKhoaHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXemKhoaHoc.ForeColor = System.Drawing.Color.White;
-            this.btnXemKhoaHoc.Location = new System.Drawing.Point(59, 311);
+            this.btnXemKhoaHoc.Location = new System.Drawing.Point(59, 222);
             this.btnXemKhoaHoc.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnXemKhoaHoc.Name = "btnXemKhoaHoc";
             this.btnXemKhoaHoc.Size = new System.Drawing.Size(258, 82);
@@ -154,7 +139,6 @@
             this.ClientSize = new System.Drawing.Size(898, 415);
             this.Controls.Add(this.btnNhapDiemThi);
             this.Controls.Add(this.btnXemKhoaHoc);
-            this.Controls.Add(this.btnLapPhieuDKthiTn);
             this.Controls.Add(this.btnLichThi);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLapHV);
@@ -178,7 +162,6 @@
         private System.Windows.Forms.Button btnDangXuat;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnLichThi;
-        private System.Windows.Forms.Button btnLapPhieuDKthiTn;
         private System.Windows.Forms.Button btnXemKhoaHoc;
         private System.Windows.Forms.Button btnNhapDiemThi;
     }

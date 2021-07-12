@@ -12,7 +12,7 @@ namespace ComputerCenter.DAO
     {
         public static DataTable LayDSNhomHocPhan_MonHoc()
         {
-            string path = @"Data Source=TRANG\SQLSERVER2008;Initial Catalog=ComputerCentre;Integrated Security=True";
+            string path = @"Data Source=DESKTOP-UML28IP;Initial Catalog=ComputerCentre;Integrated Security=True";
             SqlConnection con = new SqlConnection(path);
             con = new SqlConnection(path);
             string query = "SELECT * FROM NHOMHOCPHAN_MONHOC";

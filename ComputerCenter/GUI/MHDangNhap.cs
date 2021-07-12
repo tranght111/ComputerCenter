@@ -34,9 +34,9 @@ namespace ComputerCenter.GUI
                 username = txtUsername.Text,
                 password = txtPassword.Text
             };
-           if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
+            if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
-                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NVKThi"))
+                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NTTN"))
                 {
                     MHNhanVienKhaoThi f = new MHNhanVienKhaoThi();
                   
@@ -44,13 +44,13 @@ namespace ComputerCenter.GUI
                     f.Show();
                     f.FormClosed += F_FormClosed;
                 }
-                if (tk.username.StartsWith("hv") || tk.username.StartsWith("HV") || tk.username.StartsWith("Hv"))
+                if (tk.username.StartsWith("hv") || tk.username.StartsWith("HV") || tk.username.StartsWith("long"))
                 {
                     StudentForm f = new StudentForm();
                     
                     this.Hide();
                     f.Show();
-                    f.FormClosed += F_FormClosed;
+                    f.FormClosed += F_FormClosed;   
                 }
                 if (tk.username.StartsWith("nvktoan") || tk.username.StartsWith("NVKTOAN") || tk.username.StartsWith("Nvktoan"))
                 {
@@ -61,7 +61,7 @@ namespace ComputerCenter.GUI
                     f.FormClosed += F_FormClosed;
                 }
             }
-           else
+            else
             {
                 MessageBox.Show("Login Failed!!! Check your username or password!!!", "Thông báo");
             }

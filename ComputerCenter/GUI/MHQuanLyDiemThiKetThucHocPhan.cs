@@ -40,10 +40,10 @@ namespace ComputerCenter.GUI
 
         
 
-        private void comboBoxMaHVKTHP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaHVKTHP();
-        }
+        //private void comboBoxMaHVKTHP_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaHVKTHP();
+        //}
 
         private void cbbMaHVKTHP()
         {
@@ -54,10 +54,10 @@ namespace ComputerCenter.GUI
             comboBoxMaHVKTHP.DisplayMember = "MAHOCVIEN";
         }
 
-        private void comboBoxMaLopKTHP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaLopKTHP();
-        }
+        //private void comboBoxMaLopKTHP_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaLopKTHP();
+        //}
 
         private void cbbMaLopKTHP()
         {
@@ -68,10 +68,10 @@ namespace ComputerCenter.GUI
             comboBoxMaLopKTHP.DisplayMember = "MALOP";
         }
 
-        private void comboBoxMaNhomHPForm_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbbMaNhomHPKTHP();
-        }
+        //private void comboBoxMaNhomHPForm_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbbMaNhomHPKTHP();
+        //}
 
         private void cbbMaNhomHPKTHP()
         {
