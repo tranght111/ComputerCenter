@@ -47,5 +47,20 @@ namespace ComputerCenter.GUI
         {
 
         }
+
+        private void btnDKKH_Click(object sender, EventArgs e)
+        {
+            MHXemLopHoc xemLH = new MHXemLopHoc();
+            this.Hide();
+            xemLH.ShowDialog();
+            this.Show();
+        }
+
+        private void btnDSHVTN_Click(object sender, EventArgs e)
+        {
+            MHLapDSHVTotNghiep f = new MHLapDSHVTotNghiep();
+            this.Hide();
+            f.ShowDialog();
+        }
     }
 }

@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\DiemThiBUS.cs" />
+    <Compile Include="BUS\DiemThiKTHPBUS.cs" />
     <Compile Include="BUS\DiemThiTotNghiepBUS.cs" />
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\HocPhanBUS.cs" />
@@ -56,10 +57,12 @@
     <Compile Include="BUS\LichThiBUS.cs" />
     <Compile Include="BUS\LoaiKhoaHocBUS.cs" />
     <Compile Include="BUS\MonHocBUS.cs" />
+    <Compile Include="BUS\NhomHocPhanBUS.cs" />
     <Compile Include="BUS\NhomHocPhan_MonHocBUS.cs" />
     <Compile Include="BUS\PhieuDKThiTNBUS.cs" />
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DiemThiDAO.cs" />
+    <Compile Include="DAO\DiemThiKTHPDAO.cs" />
     <Compile Include="DAO\DiemThiTotNghiepDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HocPhanDAO.cs" />
@@ -70,6 +73,8 @@
     <Compile Include="DAO\MonHocDAO.cs" />
     <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\PhieuDKThiTNDAO.cs" />
+    <Compile Include="DAO\NhomHocPhanDAO.cs" />
+    <Compile Include="DAO\NhomHocPhan_MonHocDAO.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DAO\XuLyDuLieu.cs" />
     <Compile Include="BUS\KhoaHocBUS.cs" />
@@ -84,6 +89,12 @@
     </Compile>
     <Compile Include="GUI\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHDangKyHoacDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHDangKyHoacDangNhap.Designer.cs">
+      <DependentUpon>MHDangKyHoacDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\MHQuanLyKhoaHoc.cs">
       <SubType>Form</SubType>
@@ -127,6 +138,12 @@
     <Compile Include="GUI\MHLapPhieuDKiTN.designer.cs">
       <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MHThongTinLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHThongTinLopHoc.Designer.cs">
+      <DependentUpon>MHThongTinLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\MHNhanVienKhaoThi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +180,18 @@
     <Compile Include="GUI\MHNhapDiem.designer.cs">
       <DependentUpon>MHNhapDiem.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\MHXemDanhSachHocVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHXemDanhSachHocVien.Designer.cs">
+      <DependentUpon>MHXemDanhSachHocVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MHXemLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MHXemLopHoc.Designer.cs">
+      <DependentUpon>MHXemLopHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\AccountantForm.resx">
@@ -170,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHDangKyHoacDangNhap.resx">
+      <DependentUpon>MHDangKyHoacDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHQuanLyKhoaHoc.resx">
       <DependentUpon>MHQuanLyKhoaHoc.cs</DependentUpon>
@@ -192,6 +224,9 @@
     <EmbeddedResource Include="GUI\MHLapPhieuDKiTN.resx">
       <DependentUpon>MHLapPhieuDKiTN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHThongTinLopHoc.resx">
+      <DependentUpon>MHThongTinLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHNhanVienKhaoThi.resx">
       <DependentUpon>MHNhanVienKhaoThi.cs</DependentUpon>
     </EmbeddedResource>
@@ -209,6 +244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\MHNhapDiem.resx">
       <DependentUpon>MHNhapDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHXemDanhSachHocVien.resx">
+      <DependentUpon>MHXemDanhSachHocVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MHXemLopHoc.resx">
+      <DependentUpon>MHXemLopHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

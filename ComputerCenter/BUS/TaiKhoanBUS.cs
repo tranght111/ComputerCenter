@@ -31,5 +31,11 @@ namespace ComputerCenter.BUS
             //MHDangNhap f = new MHDangNhap();
             //f.Show();
         }
+
+        public string getRoleOfUser(string username)
+        {
+            TaiKhoanDAO tkd = new TaiKhoanDAO();
+            return tkd.getRoleOfUser(username);
+        }
     }
 }

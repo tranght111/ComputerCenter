@@ -22,7 +22,17 @@ namespace ComputerCenter.BUS
         {
             return MonHocDAO.ChonLopHoc();
         }
+        public MonHocBUS() { }
 
+        public MonHocBUS(DataRow row)
+        {
+            this.MaLop = (int)row["MALOP"];
+            this.TenLop = row["TENLOP"].ToString();
+            //HOCPHI
+            this.NgayBatDau = row["NGAYBATDAU"].ToString();
+            this.GioHoc = row["GIOHOC"].ToString();
+            this.MaGV = (int)row["MAGV"];
+        }
         public static DataTable displayLHForm()
         {
             return MonHocDAO.displayLHForm();
@@ -38,6 +48,7 @@ namespace ComputerCenter.BUS
 
             return MonHocDAO.DelLopHoc(MaLop);
         }
+        MonHocDAO mhDAO = new MonHocDAO();
 
         public static DataTable SearchLopHoc(string TenLop)
         {
@@ -59,5 +70,32 @@ namespace ComputerCenter.BUS
 
             return MonHocDAO.AddLopHoc(TLHBUS);
         }
+
+        public static int LayMaGVtheoUsername(string username)
+        {
+            return MonHocDAO.LayMaGVtheoUsername(username);
+        }
+
+        public List<MonHocBUS> getLopHocByMaLop(int malop)
+        {
+            return mhDAO.getLopHocByMaLop(malop);
+        }
+
+        public DataTable LayDSLopHocCuaKH(int makh)
+        {
+            return mhDAO.LayDSLopHocCuaKH(makh);
+        }
+
+        public DataTable LayDSMHtheoMaKH_MaNhomHP(int makh, int manhom)
+        {
+            return mhDAO.LayDSMHtheoMaKH_MaNhomHP(makh, manhom);
+        }
+
+        public static DataTable LayDSLopHocCuaGV(int maGV)
+        {
+            return MonHocBUS.LayDSLopHocCuaGV(maGV);
+        }
+
+
     }
 }

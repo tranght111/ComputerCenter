@@ -50,137 +50,154 @@
             // lbTen
             // 
             this.lbTen.AutoSize = true;
-            this.lbTen.Location = new System.Drawing.Point(41, 36);
+            this.lbTen.Location = new System.Drawing.Point(55, 44);
+            this.lbTen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(54, 13);
+            this.lbTen.Size = new System.Drawing.Size(69, 17);
             this.lbTen.TabIndex = 0;
             this.lbTen.Text = "Họ và tên";
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(101, 33);
+            this.txtTen.Location = new System.Drawing.Point(135, 41);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(193, 20);
+            this.txtTen.Size = new System.Drawing.Size(256, 22);
             this.txtTen.TabIndex = 1;
             // 
             // lbGioiTinh
             // 
             this.lbGioiTinh.AutoSize = true;
-            this.lbGioiTinh.Location = new System.Drawing.Point(41, 80);
+            this.lbGioiTinh.Location = new System.Drawing.Point(55, 98);
+            this.lbGioiTinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGioiTinh.Name = "lbGioiTinh";
-            this.lbGioiTinh.Size = new System.Drawing.Size(47, 13);
+            this.lbGioiTinh.Size = new System.Drawing.Size(60, 17);
             this.lbGioiTinh.TabIndex = 2;
             this.lbGioiTinh.Text = "Giới tính";
             // 
             // cbbGioiTinh
             // 
             this.cbbGioiTinh.FormattingEnabled = true;
-            this.cbbGioiTinh.Location = new System.Drawing.Point(101, 77);
+            this.cbbGioiTinh.Location = new System.Drawing.Point(135, 95);
+            this.cbbGioiTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbGioiTinh.Name = "cbbGioiTinh";
-            this.cbbGioiTinh.Size = new System.Drawing.Size(68, 21);
+            this.cbbGioiTinh.Size = new System.Drawing.Size(89, 24);
             this.cbbGioiTinh.TabIndex = 3;
             // 
             // lbDiaChi
             // 
             this.lbDiaChi.AutoSize = true;
-            this.lbDiaChi.Location = new System.Drawing.Point(41, 128);
+            this.lbDiaChi.Location = new System.Drawing.Point(55, 158);
+            this.lbDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(40, 13);
+            this.lbDiaChi.Size = new System.Drawing.Size(51, 17);
             this.lbDiaChi.TabIndex = 4;
             this.lbDiaChi.Text = "Địa chỉ";
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(101, 121);
+            this.txtDiaChi.Location = new System.Drawing.Point(135, 149);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(192, 20);
+            this.txtDiaChi.Size = new System.Drawing.Size(255, 22);
             this.txtDiaChi.TabIndex = 5;
             // 
             // lbNgaySinh
             // 
             this.lbNgaySinh.AutoSize = true;
-            this.lbNgaySinh.Location = new System.Drawing.Point(41, 168);
+            this.lbNgaySinh.Location = new System.Drawing.Point(55, 207);
+            this.lbNgaySinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbNgaySinh.Name = "lbNgaySinh";
-            this.lbNgaySinh.Size = new System.Drawing.Size(54, 13);
+            this.lbNgaySinh.Size = new System.Drawing.Size(71, 17);
             this.lbNgaySinh.TabIndex = 6;
             this.lbNgaySinh.Text = "Ngày sinh";
             // 
             // dtpNgaySinh
             // 
-            this.dtpNgaySinh.Location = new System.Drawing.Point(101, 165);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(135, 203);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(192, 20);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(255, 22);
             this.dtpNgaySinh.TabIndex = 7;
             // 
             // lbSDT
             // 
             this.lbSDT.AutoSize = true;
-            this.lbSDT.Location = new System.Drawing.Point(342, 36);
+            this.lbSDT.Location = new System.Drawing.Point(456, 44);
+            this.lbSDT.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSDT.Name = "lbSDT";
-            this.lbSDT.Size = new System.Drawing.Size(29, 13);
+            this.lbSDT.Size = new System.Drawing.Size(36, 17);
             this.lbSDT.TabIndex = 8;
             this.lbSDT.Text = "SDT";
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(402, 33);
+            this.txtSDT.Location = new System.Drawing.Point(536, 41);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(192, 20);
+            this.txtSDT.Size = new System.Drawing.Size(255, 22);
             this.txtSDT.TabIndex = 9;
             // 
             // lbEmail
             // 
             this.lbEmail.AutoSize = true;
-            this.lbEmail.Location = new System.Drawing.Point(342, 80);
+            this.lbEmail.Location = new System.Drawing.Point(456, 98);
+            this.lbEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(32, 13);
+            this.lbEmail.Size = new System.Drawing.Size(42, 17);
             this.lbEmail.TabIndex = 10;
             this.lbEmail.Text = "Email";
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(402, 77);
+            this.txtEmail.Location = new System.Drawing.Point(536, 95);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(261, 20);
+            this.txtEmail.Size = new System.Drawing.Size(347, 22);
             this.txtEmail.TabIndex = 11;
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(402, 121);
+            this.txtUser.Location = new System.Drawing.Point(536, 149);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(170, 20);
+            this.txtUser.Size = new System.Drawing.Size(225, 22);
             this.txtUser.TabIndex = 12;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(403, 165);
+            this.txtPassword.Location = new System.Drawing.Point(537, 203);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(152, 20);
+            this.txtPassword.Size = new System.Drawing.Size(201, 22);
             this.txtPassword.TabIndex = 13;
             // 
             // lbUsername
             // 
             this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(342, 128);
+            this.lbUsername.Location = new System.Drawing.Point(456, 158);
+            this.lbUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(55, 13);
+            this.lbUsername.Size = new System.Drawing.Size(73, 17);
             this.lbUsername.TabIndex = 14;
             this.lbUsername.Text = "Username";
             // 
             // lbPassword
             // 
             this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(342, 168);
+            this.lbPassword.Location = new System.Drawing.Point(456, 207);
+            this.lbPassword.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(53, 13);
+            this.lbPassword.Size = new System.Drawing.Size(69, 17);
             this.lbPassword.TabIndex = 15;
             this.lbPassword.Text = "Password";
             // 
             // btnDangKy
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(588, 230);
+            this.btnDangKy.Location = new System.Drawing.Point(784, 283);
+            this.btnDangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(75, 23);
+            this.btnDangKy.Size = new System.Drawing.Size(100, 28);
             this.btnDangKy.TabIndex = 16;
             this.btnDangKy.Text = "Đăng ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
@@ -188,9 +205,9 @@
             // 
             // MHDangKy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(721, 286);
+            this.ClientSize = new System.Drawing.Size(961, 352);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
@@ -208,7 +225,9 @@
             this.Controls.Add(this.lbGioiTinh);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.lbTen);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MHDangKy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MHDangKy";
             this.Load += new System.EventHandler(this.MHDangKy_Load);
             this.ResumeLayout(false);

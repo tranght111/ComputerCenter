@@ -35,6 +35,8 @@
             this.btnXemLichThiKTHP = new System.Windows.Forms.Button();
             this.btnXemDiemTotNghiep = new System.Windows.Forms.Button();
             this.btnXemDiemMonHoc = new System.Windows.Forms.Button();
+            this.btnDKKH = new System.Windows.Forms.Button();
+            this.btnDSHVTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +60,7 @@
             this.dgvStudent.Location = new System.Drawing.Point(1, 1);
             this.dgvStudent.Name = "dgvStudent";
             this.dgvStudent.ReadOnly = true;
+            this.dgvStudent.RowHeadersWidth = 51;
             this.dgvStudent.RowTemplate.Height = 28;
             this.dgvStudent.Size = new System.Drawing.Size(502, 469);
             this.dgvStudent.TabIndex = 62;
@@ -67,11 +70,12 @@
             this.btnXemLichThiTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.btnXemLichThiTN.FlatAppearance.BorderSize = 0;
             this.btnXemLichThiTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemLichThiTN.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemLichThiTN.ForeColor = System.Drawing.Color.White;
             this.btnXemLichThiTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXemLichThiTN.Location = new System.Drawing.Point(666, 49);
             this.btnXemLichThiTN.Name = "btnXemLichThiTN";
-            this.btnXemLichThiTN.Size = new System.Drawing.Size(151, 42);
+            this.btnXemLichThiTN.Size = new System.Drawing.Size(169, 42);
             this.btnXemLichThiTN.TabIndex = 69;
             this.btnXemLichThiTN.Text = "Lich thi TN";
             this.btnXemLichThiTN.UseVisualStyleBackColor = false;
@@ -82,6 +86,7 @@
             this.btnXemLichThiKTHP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.btnXemLichThiKTHP.FlatAppearance.BorderSize = 0;
             this.btnXemLichThiKTHP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemLichThiKTHP.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemLichThiKTHP.ForeColor = System.Drawing.Color.White;
             this.btnXemLichThiKTHP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXemLichThiKTHP.Location = new System.Drawing.Point(509, 49);
@@ -97,11 +102,12 @@
             this.btnXemDiemTotNghiep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.btnXemDiemTotNghiep.FlatAppearance.BorderSize = 0;
             this.btnXemDiemTotNghiep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemDiemTotNghiep.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemDiemTotNghiep.ForeColor = System.Drawing.Color.White;
             this.btnXemDiemTotNghiep.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXemDiemTotNghiep.Location = new System.Drawing.Point(666, 1);
             this.btnXemDiemTotNghiep.Name = "btnXemDiemTotNghiep";
-            this.btnXemDiemTotNghiep.Size = new System.Drawing.Size(151, 42);
+            this.btnXemDiemTotNghiep.Size = new System.Drawing.Size(169, 42);
             this.btnXemDiemTotNghiep.TabIndex = 67;
             this.btnXemDiemTotNghiep.Text = "Điểm tốt nghiệp";
             this.btnXemDiemTotNghiep.UseVisualStyleBackColor = false;
@@ -112,6 +118,7 @@
             this.btnXemDiemMonHoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
             this.btnXemDiemMonHoc.FlatAppearance.BorderSize = 0;
             this.btnXemDiemMonHoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemDiemMonHoc.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemDiemMonHoc.ForeColor = System.Drawing.Color.White;
             this.btnXemDiemMonHoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnXemDiemMonHoc.Location = new System.Drawing.Point(509, 1);
@@ -122,11 +129,45 @@
             this.btnXemDiemMonHoc.UseVisualStyleBackColor = false;
             this.btnXemDiemMonHoc.Click += new System.EventHandler(this.btnXemDiemMonHoc_Click);
             // 
+            // btnDKKH
+            // 
+            this.btnDKKH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.btnDKKH.FlatAppearance.BorderSize = 0;
+            this.btnDKKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDKKH.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDKKH.ForeColor = System.Drawing.Color.White;
+            this.btnDKKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDKKH.Location = new System.Drawing.Point(666, 145);
+            this.btnDKKH.Name = "btnDKKH";
+            this.btnDKKH.Size = new System.Drawing.Size(169, 42);
+            this.btnDKKH.TabIndex = 70;
+            this.btnDKKH.Text = "Xem khoá học";
+            this.btnDKKH.UseVisualStyleBackColor = false;
+            this.btnDKKH.Click += new System.EventHandler(this.btnDKKH_Click);
+            // 
+            // btnDSHVTN
+            // 
+            this.btnDSHVTN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.btnDSHVTN.FlatAppearance.BorderSize = 0;
+            this.btnDSHVTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDSHVTN.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDSHVTN.ForeColor = System.Drawing.Color.White;
+            this.btnDSHVTN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDSHVTN.Location = new System.Drawing.Point(509, 97);
+            this.btnDSHVTN.Name = "btnDSHVTN";
+            this.btnDSHVTN.Size = new System.Drawing.Size(326, 42);
+            this.btnDSHVTN.TabIndex = 71;
+            this.btnDSHVTN.Text = "Xem DS HV tốt nghiệp";
+            this.btnDSHVTN.UseVisualStyleBackColor = false;
+            this.btnDSHVTN.Click += new System.EventHandler(this.btnDSHVTN_Click);
+            // 
             // StudentForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(889, 472);
+            this.Controls.Add(this.btnDSHVTN);
+            this.Controls.Add(this.btnDKKH);
             this.Controls.Add(this.btnXemLichThiTN);
             this.Controls.Add(this.btnXemLichThiKTHP);
             this.Controls.Add(this.btnXemDiemTotNghiep);
@@ -153,5 +194,7 @@
         private System.Windows.Forms.Button btnXemLichThiKTHP;
         private System.Windows.Forms.Button btnXemDiemTotNghiep;
         private System.Windows.Forms.Button btnXemDiemMonHoc;
+        private System.Windows.Forms.Button btnDKKH;
+        private System.Windows.Forms.Button btnDSHVTN;
     }
 }

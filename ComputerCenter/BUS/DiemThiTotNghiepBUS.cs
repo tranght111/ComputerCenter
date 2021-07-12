@@ -73,5 +73,11 @@ namespace ComputerCenter.BUS
         {
             return DiemThiTotNghiepDAO.cbbMaPhieu_DkiTNForm();
         }
+
+        public DataTable LayDSTatCaHVTotNghiep()
+        {
+            DiemThiTotNghiepDAO TN = new DiemThiTotNghiepDAO();
+            return TN.LayDSTatCaHVTotNghiep();
+        }
     }
 }
