@@ -23,6 +23,7 @@ namespace ComputerCenter.DAO
         }
         public static void AddPieuDKThiTN(PhieuDKThiTNBUS dk)
         {
+            HocVienBUS hv = new HocVienBUS();
             try
             {
                 SqlConnection con = new SqlConnection(path);
@@ -30,6 +31,8 @@ namespace ComputerCenter.DAO
                 SqlCommand cmd = new SqlCommand("DANGKYTHITOTNGHIEP", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@NGAYLAPPHIEU", SqlDbType.DateTime).Value = dk.NgayLapPhieu;
+                cmd.Parameters.Add("@MAHOCVIEN", SqlDbType.Int).Value = hv.LayMaHVtheoUsername(Global.loginname);
+
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 cmd.ExecuteNonQuery();
                 con.Close();

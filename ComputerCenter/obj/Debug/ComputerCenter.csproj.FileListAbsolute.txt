@@ -121,3 +121,4 @@ C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerC
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.csproj.CoreCompileInputs.cache
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.exe
 C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.pdb
+C:\Users\USER\Desktop\DoAnPTTK_Lan4\FinalCode\ComputerCenter\obj\Debug\ComputerCenter.GUI.TeachersForm.resources

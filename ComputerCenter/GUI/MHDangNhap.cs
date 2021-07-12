@@ -41,7 +41,7 @@ namespace ComputerCenter.GUI
 
            if(TaiKhoanBUS.KtraDangNhapHopLe(tk).HasRows)
             {
-                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("NTTN"))
+                if(tk.username.StartsWith("NVKTHI") || tk.username.StartsWith("nvkthi") || tk.username.StartsWith("Nvkthi"))
                 {
                     MHNhanVienKhaoThi f = new MHNhanVienKhaoThi();
                   
@@ -58,6 +58,15 @@ namespace ComputerCenter.GUI
                     this.Hide();
                     f.Show();
                     f.FormClosed += F_FormClosed;
+                }
+                else
+                if (tk.username.StartsWith("gv") || tk.username.StartsWith("GV") || tk.username.StartsWith("Gv"))
+                {
+                    MHXemLopHoc f = new MHXemLopHoc();
+                    this.Hide();
+                    f.Show();
+                    f.FormClosed += F_FormClosed;
+
                 }
                 else
                 {
