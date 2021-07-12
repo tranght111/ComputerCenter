@@ -28,6 +28,8 @@ namespace ComputerCenter.GUI
             InitializeComponent();
             MaKH = makh;
 
+            if (Global.role == "NhanVienKhaoThi")
+                btnDkyKH.Enabled = false;
             ShowLopHoc(makh);
             labelTenKH.Text = "Khoa hoc " + tenkh + "\nDanh sach lop hoc:";
         }

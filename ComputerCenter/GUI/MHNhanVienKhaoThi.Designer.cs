@@ -37,6 +37,8 @@
             this.btnLapPhieuDKthiTn = new System.Windows.Forms.Button();
             this.btnXemKhoaHoc = new System.Windows.Forms.Button();
             this.btnNhapDiemThi = new System.Windows.Forms.Button();
+            this.btnXemLH = new System.Windows.Forms.Button();
+            this.btnXemDSHV = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLapHV
@@ -148,10 +150,40 @@
             this.btnNhapDiemThi.UseVisualStyleBackColor = false;
             this.btnNhapDiemThi.Click += new System.EventHandler(this.btnNhapDiemThi_Click);
             // 
+            // btnXemLH
+            // 
+            this.btnXemLH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.btnXemLH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemLH.ForeColor = System.Drawing.Color.White;
+            this.btnXemLH.Location = new System.Drawing.Point(363, 213);
+            this.btnXemLH.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnXemLH.Name = "btnXemLH";
+            this.btnXemLH.Size = new System.Drawing.Size(258, 82);
+            this.btnXemLH.TabIndex = 26;
+            this.btnXemLH.Text = "Xem Lớp Học";
+            this.btnXemLH.UseVisualStyleBackColor = false;
+            this.btnXemLH.Click += new System.EventHandler(this.btnXemLH_Click);
+            // 
+            // btnXemDSHV
+            // 
+            this.btnXemDSHV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(50)))), ((int)(((byte)(94)))));
+            this.btnXemDSHV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXemDSHV.ForeColor = System.Drawing.Color.White;
+            this.btnXemDSHV.Location = new System.Drawing.Point(363, 311);
+            this.btnXemDSHV.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnXemDSHV.Name = "btnXemDSHV";
+            this.btnXemDSHV.Size = new System.Drawing.Size(258, 82);
+            this.btnXemDSHV.TabIndex = 27;
+            this.btnXemDSHV.Text = "Xem DS Học Viên";
+            this.btnXemDSHV.UseVisualStyleBackColor = false;
+            this.btnXemDSHV.Click += new System.EventHandler(this.btnXemDSHV_Click);
+            // 
             // MHNhanVienKhaoThi
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(898, 415);
+            this.Controls.Add(this.btnXemDSHV);
+            this.Controls.Add(this.btnXemLH);
             this.Controls.Add(this.btnNhapDiemThi);
             this.Controls.Add(this.btnXemKhoaHoc);
             this.Controls.Add(this.btnLapPhieuDKthiTn);
@@ -181,5 +213,7 @@
         private System.Windows.Forms.Button btnLapPhieuDKthiTn;
         private System.Windows.Forms.Button btnXemKhoaHoc;
         private System.Windows.Forms.Button btnNhapDiemThi;
+        private System.Windows.Forms.Button btnXemLH;
+        private System.Windows.Forms.Button btnXemDSHV;
     }
 }
