@@ -71,5 +71,17 @@ namespace ComputerCenter.GUI
             MHNhapDiem f = new MHNhapDiem();
             f.ShowDialog();
         }
+
+        private void btnXemLH_Click(object sender, EventArgs e)
+        {
+            MHXemLopHoc f = new MHXemLopHoc();
+            f.ShowDialog();
+        }
+
+        private void btnXemDSHV_Click(object sender, EventArgs e)
+        {
+            MHXemDanhSachHocVien f = new MHXemDanhSachHocVien();
+            f.ShowDialog();
+        }
     }
 }
