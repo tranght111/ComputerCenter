@@ -146,10 +146,10 @@ namespace ComputerCenter.GUI
 
         }
 
-        private void comboBoxMaLoaiKH_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            DataComboBox();
-        }
+        //private void comboBoxMaLoaiKH_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    DataComboBox();
+        //}
 
         private void DataComboBox()
         {

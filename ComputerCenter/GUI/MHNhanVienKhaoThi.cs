@@ -60,11 +60,11 @@ namespace ComputerCenter.GUI
             f.ShowDialog();
         }
 
-        private void btnLapPhieuDKthiTn_Click(object sender, EventArgs e)
-        {
-            MHLapPhieuDKiTN f = new MHLapPhieuDKiTN();
-            f.ShowDialog();
-        }
+        //private void btnLapPhieuDKthiTn_Click(object sender, EventArgs e)
+        //{
+        //    MHLapPhieuDKiTN f = new MHLapPhieuDKiTN();
+        //    f.ShowDialog();
+        //}
 
         private void btnNhapDiemThi_Click(object sender, EventArgs e)
         {
