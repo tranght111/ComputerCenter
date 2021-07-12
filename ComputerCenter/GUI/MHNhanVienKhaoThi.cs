@@ -32,10 +32,12 @@ namespace ComputerCenter.GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            TaiKhoanBUS.DangXuat();
-            this.Close();
-            /*MHDangNhap f = new MHDangNhap();
-            f.Show();*/
+            //TaiKhoanBUS.DangXuat();
+            DialogResult dlr = MessageBox.Show("Bạn có muốn đăng xuất", "Thông Báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dlr == DialogResult.OK)
+            {
+                this.Close();
+            }
         }
 
         private void MHNhanVienKhaoThi_Load(object sender, EventArgs e)

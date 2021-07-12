@@ -213,11 +213,8 @@ namespace ComputerCenter.GUI
             //lay ds Giaovien
             cbbMaGV_TN();
         }
-
         private void comboBoxMaKH_TN_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show((comboBoxMaKH_TN.Text));
-
             var table = KhoaHocBUS.LayDSHocVienCuaKhoaHoc(int.Parse(comboBoxMaKH_TN.Text));
 
             comboBoxMaHVTN.ValueMember = "MAHOCVIEN";
